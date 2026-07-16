@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 
 import hero1 from "@/assets/hero-slide-1.png";
-import hero2 from "@/assets/hero-slide-2.jpg";
+import hero2 from "@/assets/hero2.png";
 import hero3 from "@/assets/hero-slide-3.jpg";
 
 import { Button } from "@/components/ui/button";
@@ -27,7 +27,7 @@ const slides = [
     title: "Crack CAT, CLAT & IPMAT",
   },
   {
-    image: hero3,
+  
     title: "Your Rank Story Starts Today",
   },
 ];

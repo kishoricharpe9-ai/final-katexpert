@@ -1,6 +1,6 @@
 import { Target, Eye, Award, Users, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import aboutImg from "@/assets/about.jpg";
+import aboutImg from "@/assets/hero2.png";
 import { Reveal, SectionHeading } from "./section";
 
 const POINTS = [
