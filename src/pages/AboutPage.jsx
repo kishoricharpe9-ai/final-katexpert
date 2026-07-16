@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
+import p6 from "@/assets/naman-agrawal.jpg";
 import {
   BookOpen,
   LineChart,
@@ -472,7 +473,7 @@ export default function AboutPage() {
                       <div className="relative bg-white border border-slate-100 p-2.5 rounded-3xl shadow-xl">
                         <div className="relative aspect-square overflow-hidden rounded-2xl bg-slate-50 border border-slate-100">
                           <img
-                            src="https://katexperts.com/wp-content/uploads/2025/04/Portrait-of-a-woman-graduation-cap-_-Premium-AI-generated-image.jpg"
+                            src={p6}
                             alt="Graduate Student - KATexpert Nagpur"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-103"
                           />

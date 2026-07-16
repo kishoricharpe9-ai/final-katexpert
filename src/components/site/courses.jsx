@@ -39,7 +39,11 @@ export function Courses() {
 
   return (
     <section id="courses" className="bg-background py-10 sm:py-12">
-      <div className="container-x max-w-5xl mx-auto px-4 sm:px-8">
+      {/* 
+        Quadrupled the baseline padding from px-2.5 to px-10 on mobile, 
+        and from sm:px-4 to sm:px-16 on larger viewport setups.
+      */}
+      <div className="container-x max-w-7xl mx-auto px-10 sm:px-16">
         
         <Reveal>
           <SectionHeading

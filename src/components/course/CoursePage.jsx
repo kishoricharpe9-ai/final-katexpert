@@ -212,7 +212,7 @@ function Journey({ c }) {
                   className={`relative md:grid md:grid-cols-2 md:gap-8 items-center reveal`}
                   style={{ animationDelay: `${i * 80}ms` }}
                 >
-                  <div className={`md:${left ? "pr-8 md:text-right" : "col-start-2 md:pl-8"} ${left ? "md:text-right" : ""}`}>
+                  <div className={left ? "md:pr-8 md:text-right" : "md:col-start-2 md:pl-8"}>
                     <div className={`card-premium p-4.5 ${left ? "md:ml-auto md:max-w-sm" : "md:mr-auto md:max-w-sm"}`}>
                       <span className="text-[10px] font-bold tracking-widest uppercase text-[#ea580c]">Step {String(i + 1).padStart(2, "0")}</span>
                       <h3 className="mt-0.5 font-display text-sm sm:text-base font-bold text-navy">{s.title}</h3>

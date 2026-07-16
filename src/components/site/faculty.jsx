@@ -14,26 +14,23 @@ export function Faculty() {
         <h2 className="text-2xl sm:text-3xl font-extrabold font-display tracking-tight text-navy">
           Learn from <span className="text-accent">the best</span>
         </h2>
-        {/* <p className="mt-3 text-sm sm:text-base text-muted-foreground max-w-xl">
-          IIM and NLU alumni who have personally mentored thousands of top-rankers.
-        </p> */}
       </div>
 
       {/* Faculty Cards Container */}
       <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto px-4 w-full">
-        {FACULTY.map((f, i) => (
+        {/* Added .slice(0, 2) to only render the first two faculties */}
+        {FACULTY.slice(0, 2).map((f, i) => (
           <Reveal key={f.name} delay={i * 0.05} className="w-full lg:w-[calc(50%-12px)]">
             <article className="group relative flex flex-col sm:flex-row h-full rounded-2xl border border-border bg-card p-5 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card w-full gap-5">
-              
               {/* Left Profile Image Side */}
               <div className="relative w-full sm:w-[160px] md:w-[180px] shrink-0">
                 <div className="grid aspect-square w-full place-items-center overflow-hidden rounded-xl bg-navy/5 relative">
                   <User className="absolute h-12 w-12 text-navy/20 strokeWidth={1.2}" />
                   {f.image && (
-                    <img 
-                      src={f.image} 
-                      alt={f.name} 
-                      className="absolute inset-0 h-full w-full object-contain transition-transform duration-500 loading=lazy" 
+                    <img
+                      src={f.image}
+                      alt={f.name}
+                      className="absolute inset-0 h-full w-full object-contain transition-transform duration-500 loading=lazy"
                     />
                   )}
                   <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
@@ -55,7 +52,7 @@ export function Faculty() {
                   <p className="mt-2 text-xs leading-relaxed text-muted-foreground line-clamp-2 md:line-clamp-3">
                     {f.blurb}
                   </p>
-
+                  
                   {/* Meta Qualification Specs Row */}
                   <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1.5 text-xs font-medium text-foreground/75 border-t border-border pt-3">
                     <span className="inline-flex items-center gap-1.5 text-[11px]">
@@ -69,7 +66,10 @@ export function Faculty() {
                   {/* Subject Matter Expertise Pills Track */}
                   <div className="mt-3 flex flex-wrap gap-1">
                     {f.expertise.slice(0, 3).map((e) => (
-                      <span key={e} className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-medium text-secondary-foreground">
+                      <span
+                        key={e}
+                        className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-medium text-secondary-foreground"
+                      >
                         {e}
                       </span>
                     ))}
@@ -80,30 +80,29 @@ export function Faculty() {
                 <div className="mt-4 flex flex-wrap items-center justify-between gap-2 border-t border-border pt-3">
                   <div className="flex gap-1">
                     {[Linkedin, Twitter, Mail].map((Icon, idx) => (
-                      <a key={idx} href="#contact" aria-label="Social Link Connection" className="grid h-7 w-7 place-items-center rounded-md border border-border text-foreground/60 transition-all hover:border-accent hover:bg-accent/5 hover:text-accent">
+                      <a
+                        key={idx}
+                        href="#contact"
+                        aria-label="Social Link Connection"
+                        className="grid h-7 w-7 place-items-center rounded-md border border-border text-foreground/60 transition-all hover:border-accent hover:bg-accent/5 hover:text-accent"
+                      >
                         <Icon className="h-3 w-3" />
                       </a>
                     ))}
                   </div>
-                  <Link 
-                    to={`/about?tab=Faculty#${f.slug}`} 
+                  <Link
+                    to={`/about?tab=Faculty#${f.slug}`}
                     className="inline-flex items-center justify-center gap-1 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider rounded-lg bg-accent text-white shadow-sm hover:bg-accent/90 active:scale-95 transition-all group/btn ml-auto cursor-pointer"
                   >
-                    Learn More <ArrowRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-0.5" />
+                    Learn More{" "}
+                    <ArrowRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-0.5" />
                   </Link>
                 </div>
               </div>
-
             </article>
           </Reveal>
         ))}
       </div>
-
-      {/* <div className="flex justify-center mt-10 w-full">
-        <a href="#contact" className="inline-flex items-center justify-center gap-1.5 px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-lg bg-accent text-white shadow-sm hover:bg-accent/90 active:scale-95 transition-all group/btn">
-          See all faculties <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover/btn:translate-x-1" />
-        </a>
-      </div> */}
     </section>
   );
 }
