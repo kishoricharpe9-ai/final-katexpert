@@ -1,6 +1,6 @@
 export const testimonials = [
   {
-    id: "abeer",
+    id: "preet",
     youtubeId: "I1Z6BsYjHXk",
     isShort: true,
     name: "Preet Rajwade",
@@ -12,7 +12,7 @@ export const testimonials = [
     quote: "KATexpert gave me the structure I needed to convert my CAT dream into reality.",
   },
   {
-    id: "khushi",
+    id: "vanshita",
     youtubeId: "RUch3M7DeR0",
     isShort: true,
     name: "Vanshita Patel",
@@ -36,7 +36,7 @@ export const testimonials = [
     quote: "From average scores to a top JBIMS seat — the KATexpert grind changed everything.",
   },
   {
-    id: "tanishq",
+    id: "jay",
     youtubeId: "7WWzJHTznMs",
     isShort: true,
     name: "Jay",
@@ -60,7 +60,7 @@ export const testimonials = [
     quote: "Consistent mocks and honest feedback — that's the KATexpert formula.",
   },
   {
-    id: "why-love",
+    id: "darshan",
     youtubeId: "yYUONg1f-Sw",
     isShort: true,
     name: "Darshan",
@@ -84,10 +84,10 @@ export const testimonials = [
     quote: "Personal attention that big institutes just can't offer.",
   },
   {
-    id: "comfort",
+    id: "shimant",
     youtubeId: "5QxsWC1Jkz4",
     isShort: true,
-    name: "Shrimant",
+    name: "Shimant",
     exam: "",
     college: "",
     score: "",
@@ -96,7 +96,7 @@ export const testimonials = [
     quote: "The environment lets you ask the silliest question without hesitation.",
   },
   {
-    id: "guidance",
+    id: "radhika",
     youtubeId: "Ns_tSPuYHAA",
     isShort: true,
     name: "Radhika",

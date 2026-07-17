@@ -40,7 +40,7 @@ const VIDEO_TESTIMONIALS = [
   {
     id: "abeer",
     youtubeId: "I1Z6BsYjHXk",
-    name: "Abeer Bhaiya",
+    name: "Preet Rajwade",
     exam: "CAT",
     college: "IIM Ahmedabad",
     score: "99.8%ile",
@@ -68,9 +68,9 @@ const VIDEO_TESTIMONIALS = [
     title: "Arpit's CET Success Story"
   },
   {
-    id: "tanishq",
+    id: "jay",
     youtubeId: "7WWzJHTznMs",
-    name: "Tanishq Chhajer",
+    name: " Jay",
     exam: "CAT",
     college: "IIM Bangalore",
     score: "99.6%ile",
@@ -90,7 +90,7 @@ const VIDEO_TESTIMONIALS = [
   {
     id: "why-love",
     youtubeId: "yYUONg1f-Sw",
-    name: "Priya S.",
+    name: "Darshan",
     exam: "CAT",
     college: "IIM Lucknow",
     score: "99.5%ile",
@@ -108,9 +108,9 @@ const VIDEO_TESTIMONIALS = [
     title: "Rupali's Success Story"
   },
   {
-    id: "comfort",
+    id: "Shimant",
     youtubeId: "5QxsWC1Jkz4",
-    name: "Aditya M.",
+    name: "Shimant",
     exam: "IPMAT",
     college: "IIM Rohtak",
     score: "AIR 47",
@@ -120,7 +120,7 @@ const VIDEO_TESTIMONIALS = [
   {
     id: "guidance",
     youtubeId: "Ns_tSPuYHAA",
-    name: "Sneha K.",
+    name: "Radhika",
     exam: "CRT",
     college: "TCS Digital",
     score: "Placed",
@@ -150,7 +150,7 @@ const VIDEO_TESTIMONIALS = [
   {
     id: "krish",
     youtubeId: "F1B35HJKOpM",
-    name: "Krish Sir's Batch",
+    name: "Krish Sir",
     exam: "CAT",
     college: "Multiple IIMs",
     score: "99+%ile",
@@ -160,7 +160,7 @@ const VIDEO_TESTIMONIALS = [
   {
     id: "arumita",
     youtubeId: "4F12hXxDKr4",
-    name: "Arumita Ma'am's Batch",
+    name: "Arumita Ma'am",
     exam: "IPMAT",
     college: "IIM Indore & Rohtak",
     score: "Top Ranks",
@@ -452,10 +452,10 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Back Button */}
-        <div className="mb-6 flex justify-start">
+        <div className="mb-2 flex justify-start">
           <Link
             to="/"
-            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-brand-blue hover:text-brand-orange hover:border-brand-orange/30 shadow-sm transition-all hover:scale-101"
+            className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-brand-blue hover:text-brand-orange hover:border-brand-orange/30 shadow-sm transition-all hover:scale-101 mt-10"
             id="about-back-to-home-btn"
           >
             <ArrowLeft className="h-4 w-4" />
@@ -471,7 +471,7 @@ export default function AboutPage() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-sm font-bold tracking-wide transition-all duration-200 cursor-pointer ${
+                className={`px-4 py-2 sm:px-5 sm:py-2 rounded-xl text-sm font-bold tracking-wide transition-all duration-200 cursor-pointer ${
                   isActive
                     ? 'bg-brand-blue text-white shadow-lg shadow-brand-blue/15 scale-102'
                     : 'text-brand-blue hover:bg-slate-100 hover:scale-101'
