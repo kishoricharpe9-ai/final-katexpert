@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Facebook, Instagram, Youtube, MapPin, Phone, Mail, Send } from "lucide-react";
+import { Facebook, Instagram, Youtube, Linkedin, MapPin, Phone, Mail, Send } from "lucide-react";
 import { toast } from "sonner";
 import { Logo } from "./logo";
 import { BRAND, NAV_LINKS, COURSES } from "@/lib/site-data";
@@ -38,7 +38,8 @@ function Footer() {
             {[
               { Icon: Facebook, url: "https://www.facebook.com/katexpertinstitute/" },
               { Icon: Instagram, url: "https://www.instagram.com/katexpert_nagpur/" },
-              { Icon: Youtube, url: "https://www.youtube.com/channel/UCxc-E0Jkn7EUBlCg7I9WXrw" }
+              { Icon: Youtube, url: "https://www.youtube.com/channel/UCxc-E0Jkn7EUBlCg7I9WXrw" },
+              { Icon: Linkedin, url: "https://www.linkedin.com/company/katexpertnagpur/" }
             ].map(({ Icon, url }, i) => (
               <a
                 key={i}

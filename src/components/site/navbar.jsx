@@ -454,7 +454,9 @@ function Navbar() {
         }`}
       >
         <nav className="container-x flex h-16 items-center justify-between gap-4 md:h-18">
-          <Logo light={!scrolled} />
+          <div className="lg:ml-20">
+            <Logo light={!scrolled} />
+          </div>
 
           <ul className="hidden items-center gap-1 lg:flex">
             {NAV_LINKS.map((l) => (

@@ -9,7 +9,8 @@ import {
   MoreHorizontal,
   LayoutGrid,
   List,
-  FileText
+  FileText,
+  Download
 } from "lucide-react";
 
 function PdfViewerCard({ title, subtitle, pdfUrl }) {
@@ -18,6 +19,18 @@ function PdfViewerCard({ title, subtitle, pdfUrl }) {
 
   const openPdf = () => {
     if (pdfUrl) window.open(pdfUrl, "_blank", "noopener,noreferrer");
+  };
+
+  const downloadPdf = () => {
+    if (pdfUrl) {
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.setAttribute("download", "");
+      link.setAttribute("target", "_blank");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   const toggleView = () => setViewing((v) => !v);
@@ -101,6 +114,7 @@ function PdfViewerCard({ title, subtitle, pdfUrl }) {
             onClick={() => setZoom((z) => Math.min(200, z + 25))}
           />
           <ToolbarButton icon={Maximize2} label="Fullscreen" onClick={openPdf} />
+          <ToolbarButton icon={Download} label="Download" onClick={downloadPdf} />
           <ToolbarButton icon={Share2} label="Share" onClick={openPdf} />
           <ToolbarButton icon={MoreHorizontal} label="More options" onClick={openPdf} />
         </div>

@@ -41,7 +41,7 @@ function HeroStat({ value, suffix, label }) {
         {n.toLocaleString("en-IN")}
         <span className="text-accent">{suffix}</span>
       </div>
-      <div className="mt-1 text-xs text-slate-600">{label}</div>
+      <div className="text-xs text-slate-600">{label}</div>
     </div>
   );
 }
@@ -201,7 +201,7 @@ export function Hero() {
             />
 
             <FloatingCard
-              className="absolute -left-12 top-1/3"
+              className="absolute -left-12 top-2/3"
               delay={0.4}
               icon={<Star className="h-4 w-4 text-accent" />}
               title="99.35 %ile MBA CET"
