@@ -26,7 +26,8 @@ import {
   Scale,
   Target,
   Eye,
-  Heart
+  Heart,
+  Image
 } from 'lucide-react';
 import { CONTACT_INFO, COURSES, FACULTY, TOPPERS, TESTIMONIALS } from "@/lib/site-data";
 import DossierDrawer from "@/components/site/DossierDrawer";
@@ -188,6 +189,56 @@ const NEWS_EVENTS = [
     venue: "Wings Turf, Bishop School, Civil Lines",
     desc: "Four teams competed fiercely in the annual KATexpert Box Cricket League. In a thrilling final, the 'Sigmas' captained by Hiten Khatod defeated the 'Vibers' by 8 runs, scoring 63 runs in 8 overs and defending it by restricting the opponents to 55 runs. Individual accolades went to Aniket Matte & Shravani Raut (Best Bowlers) and Vishal Sakharwade & Sanjana Manekar (Best Batsmen). The event was graced by directors Dr. Arumita Pawa, Krish Vyas, along with Manoj Pawa and Amit Gandhare.",
     images: [newsCricket1, newsCricket2]
+  },
+  {
+    id: 2,
+    type: "Session",
+    title: "Detox Your Mind",
+    date: "Mental Wellness",
+    time: "Mindfulness Session",
+    venue: "KATexpert Nagpur Classroom",
+    desc: "KATexpert organized an enriching session titled \"Detox Your Mind\" led by Ms. Tina Chachra, Founder and Healer. The session focused on mental wellness, stress management, and maintaining a positive mindset during competitive exam preparation.\n\nThrough interactive guidance and simple mindfulness techniques, students learned practical ways to improve focus and emotional balance. The session served as a refreshing and rejuvenating experience for all participants.",
+    rightImage: null
+  },
+  {
+    id: 3,
+    type: "Session",
+    title: "LinkedIn Made Easy",
+    date: "Personal Branding",
+    time: "Career Session",
+    venue: "KATexpert Nagpur Classroom",
+    desc: "KATexpert conducted an engaging session titled \"LinkedIn Made Easy\" by Ms. Bhavya Magnani, Social Media Manager and Personal Branding Strategist. The session focused on building a strong LinkedIn profile, personal branding, and effective networking strategies.\n\nStudents gained practical insights on enhancing their professional presence online, making the session both informative and career-oriented.",
+    rightImage: null
+  },
+  {
+    id: 4,
+    type: "Event",
+    title: "Exploring BBA / MBA World : Their Way",
+    date: "Alumni Interaction",
+    time: "Success Session",
+    venue: "KATexpert Nagpur Classroom",
+    desc: "Mozzammil Khalil (MMS from JBIMS, 2023 Batch; CAT 2021: 99.49%ile, MAH-CET 2021: 99.94%ile) shared insights on CAT and MAH-CET preparation, his MMS journey, and the transition to the corporate world. The interactive session was highly informative and motivating for MBA aspirants.",
+    rightImage: null
+  },
+  {
+    id: 5,
+    type: "Event",
+    title: "Turfament 1",
+    date: "Sports Day",
+    time: "Box Cricket Tournament",
+    venue: "Wings Turf, Bishop School, Civil Lines",
+    desc: "KATexpert organized TURFAMENT, a fun-filled cricket tournament for students. Divided into teams, participants showcased teamwork, sportsmanship, and competitive spirit in exciting matches. The event aimed to build camaraderie and offer a refreshing stress-buster amid exam preparations.\n\nIt concluded with medals and trophies for the winners and snack boxes for everyone, making it a memorable blend of cricket and CAT camaraderie. The event was graced by Mr. Amit Gandhare and the Directors of KATexpert Dr Arumita Pawa and Krish Vyas.",
+    rightImage: null
+  },
+  {
+    id: 6,
+    type: "News",
+    title: "Turfament 2",
+    date: "Box Cricket League",
+    time: "Champions Trophy",
+    venue: "Wings Turf, Bishop School, Civil Lines",
+    desc: "SIGMAS defeated Vibers to clinch the KATexpert Champions trophy. The Box Cricket League was organised by KATexpert of Khare Town, Dharampeth, at Wings Turf, Bishop School, Civil Lines. Four teams competed against each other to reach the finals. In the final, Sigmas defeated Vibers by eight runs to claim the title. Sigmas posted 63 runs in 8 overs and restricted their opponents to 55 runs. Around 100 students participated in the event with full enthusiasm and excitement. It also gave them an opportunity to network with other students and show their leadership skills and sportsmanship. The event was graced by Manoj Pawa, Amit Gandhare and the Directors of KATexpert Dr Arumita Pawa and Krish Vyas.",
+    rightImage: null
   }
 ];
 
@@ -821,7 +872,7 @@ export default function AboutPage() {
                   <div className="max-w-3xl mx-auto space-y-5">
                     <div className="flex flex-col gap-4">
                       {NEWS_EVENTS.map((event) => (
-                        <div key={event.id} className="rounded-2xl border border-slate-100 bg-white p-5 shadow-md flex flex-col md:flex-row gap-5 text-left">
+                        <div key={event.id} className="rounded-2xl border border-slate-100 bg-white p-5 shadow-md flex flex-col md:flex-row gap-5 text-left items-start md:items-center">
                           {/* Type Badge */}
                           <div className="md:w-32 shrink-0 flex flex-col items-start gap-0.5">
                             <span className={`text-[9px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider ${
@@ -839,7 +890,7 @@ export default function AboutPage() {
                           {/* Event Content */}
                           <div className="flex-1 flex flex-col justify-center">
                             <h3 className="font-display text-xs sm:text-sm font-bold text-brand-blue leading-normal">{event.title}</h3>
-                            <p className="mt-1.5 text-[11px] text-slate-500 leading-relaxed">{event.desc}</p>
+                            <p className="mt-1.5 text-[11px] text-slate-500 leading-relaxed whitespace-pre-line">{event.desc}</p>
                             {event.images && event.images.length > 0 && (
                               <div className="mt-3 flex flex-wrap gap-2.5">
                                 {event.images.map((img, index) => (
@@ -864,6 +915,19 @@ export default function AboutPage() {
                               {event.venue}
                             </div>
                           </div>
+                          {/* Right Image Slot */}
+                          {event.rightImage !== undefined && (
+                            <div className="w-24 h-24 md:w-28 md:h-28 shrink-0 overflow-hidden rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center relative group select-none">
+                              {event.rightImage ? (
+                                <img src={event.rightImage} alt={event.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                              ) : (
+                                <div className="flex flex-col items-center justify-center text-slate-400 p-2">
+                                  <Image className="w-5 h-5 text-slate-300 mb-1" />
+                                  <span className="text-[8px] font-bold text-slate-400 tracking-wider">Placeholder</span>
+                                </div>
+                              )}
+                            </div>
+                          )}
                         </div>
                       ))}
                     </div>
