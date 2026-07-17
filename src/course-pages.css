@@ -680,8 +680,16 @@
    MCA CET Page Specific Styles
    ========================================================================== */
 .mca-hero {
+  padding-top: 9rem;
   padding-bottom: 6rem;
   background: radial-gradient(circle at 80% 20%, rgba(240, 247, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+@media (max-width: 768px) {
+  .mca-hero {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
 }
 
 .grid-hero {

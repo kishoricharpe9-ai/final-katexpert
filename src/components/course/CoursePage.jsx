@@ -80,7 +80,7 @@ function SectionHeading({
 
 function Hero({ c }) {
   return (
-    <section className="relative bg-hero-radial pt-20 pb-12 sm:pt-24 sm:pb-16 overflow-hidden">
+    <section className="relative bg-hero-radial pt-32 pb-12 sm:pt-36 sm:pb-16 overflow-hidden">
       <div className="container-x max-w-5xl mx-auto px-4 sm:px-8 grid gap-8 lg:grid-cols-[1.1fr_1fr] items-center">
         <div className="text-white">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-[#ea580c]">

@@ -79,7 +79,7 @@ export default function VideoTestimonialsPage() {
                 Book Free Counselling <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
               </a>
               <a
-                href="#gallery"
+                href="#topper-testimonials"
                 className="inline-flex items-center gap-2 rounded-xl border border-white/25 bg-white/5 px-5 py-2.5 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/10"
               >
                 <Play className="h-4 w-4 fill-current" /> Watch Stories
@@ -94,8 +94,8 @@ export default function VideoTestimonialsPage() {
             className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4"
           >
             {[
-              { icon: Users, label: "Students Mentored", value: 1000, suffix: "+" },
-              { icon: GraduationCap, label: "Years Experience", value: 25, suffix: "+" },
+              { icon: Users, label: "Students Trained", value: 5000, suffix: "+" },
+              { icon: GraduationCap, label: "Years of Experience", value: 18, suffix: "+" },
               { icon: Star, label: "Student Satisfaction", value: 4.9, suffix: "★" },
               { icon: Trophy, label: "Success Stories", value: 500, suffix: "+" },
             ].map((s) => (
@@ -166,7 +166,7 @@ export default function VideoTestimonialsPage() {
       )}
 
       {/* SHORTS/REELS SHOWCASE */}
-      <section className="bg-secondary/20 py-10 mt-12 border-y border-border/40 overflow-hidden">
+      <section id="topper-testimonials" className="bg-secondary/20 py-10 mt-12 border-y border-border/40 overflow-hidden">
         <IPhoneReelsCarousel 
           items={testimonials.filter((t) => t.isShort)} 
           onVideoClick={(t) => openVideo(t)} 
@@ -178,8 +178,8 @@ export default function VideoTestimonialsPage() {
         <div className="rounded-2xl bg-white border border-border p-6 shadow-soft md:p-8">
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4">
             {[
-              { to: 1000, suffix: "+", label: "Students Mentored" },
-              { to: 25, suffix: "+", label: "Years Experience" },
+              { to: 5000, suffix: "+", label: "Students Trained" },
+              { to: 18, suffix: "+", label: "Years of Experience" },
               { to: 95, suffix: "%", label: "Success Rate" },
               { to: 500, suffix: "+", label: "Video Testimonials" },
             ].map((s) => (

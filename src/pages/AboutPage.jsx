@@ -198,7 +198,7 @@ const NEWS_EVENTS = [
     time: "Mindfulness Session",
     venue: "KATexpert Nagpur Classroom",
     desc: "KATexpert organized an enriching session titled \"Detox Your Mind\" led by Ms. Tina Chachra, Founder and Healer. The session focused on mental wellness, stress management, and maintaining a positive mindset during competitive exam preparation.\n\nThrough interactive guidance and simple mindfulness techniques, students learned practical ways to improve focus and emotional balance. The session served as a refreshing and rejuvenating experience for all participants.",
-    rightImage: null
+    rightImage: "/assets/gallery/2026/05/5.jpeg"
   },
   {
     id: 3,
@@ -208,7 +208,7 @@ const NEWS_EVENTS = [
     time: "Career Session",
     venue: "KATexpert Nagpur Classroom",
     desc: "KATexpert conducted an engaging session titled \"LinkedIn Made Easy\" by Ms. Bhavya Magnani, Social Media Manager and Personal Branding Strategist. The session focused on building a strong LinkedIn profile, personal branding, and effective networking strategies.\n\nStudents gained practical insights on enhancing their professional presence online, making the session both informative and career-oriented.",
-    rightImage: null
+    rightImage: "/assets/gallery/2026/05/14.jpeg"
   },
   {
     id: 4,
@@ -218,7 +218,7 @@ const NEWS_EVENTS = [
     time: "Success Session",
     venue: "KATexpert Nagpur Classroom",
     desc: "Mozzammil Khalil (MMS from JBIMS, 2023 Batch; CAT 2021: 99.49%ile, MAH-CET 2021: 99.94%ile) shared insights on CAT and MAH-CET preparation, his MMS journey, and the transition to the corporate world. The interactive session was highly informative and motivating for MBA aspirants.",
-    rightImage: null
+    rightImage: "/assets/gallery/2026/05/12.jpeg"
   },
   {
     id: 5,
@@ -228,7 +228,7 @@ const NEWS_EVENTS = [
     time: "Box Cricket Tournament",
     venue: "Wings Turf, Bishop School, Civil Lines",
     desc: "KATexpert organized TURFAMENT, a fun-filled cricket tournament for students. Divided into teams, participants showcased teamwork, sportsmanship, and competitive spirit in exciting matches. The event aimed to build camaraderie and offer a refreshing stress-buster amid exam preparations.\n\nIt concluded with medals and trophies for the winners and snack boxes for everyone, making it a memorable blend of cricket and CAT camaraderie. The event was graced by Mr. Amit Gandhare and the Directors of KATexpert Dr Arumita Pawa and Krish Vyas.",
-    rightImage: null
+    rightImage: "/assets/gallery/2026/05/4.jpeg"
   },
   {
     id: 6,
@@ -238,7 +238,7 @@ const NEWS_EVENTS = [
     time: "Champions Trophy",
     venue: "Wings Turf, Bishop School, Civil Lines",
     desc: "SIGMAS defeated Vibers to clinch the KATexpert Champions trophy. The Box Cricket League was organised by KATexpert of Khare Town, Dharampeth, at Wings Turf, Bishop School, Civil Lines. Four teams competed against each other to reach the finals. In the final, Sigmas defeated Vibers by eight runs to claim the title. Sigmas posted 63 runs in 8 overs and restricted their opponents to 55 runs. Around 100 students participated in the event with full enthusiasm and excitement. It also gave them an opportunity to network with other students and show their leadership skills and sportsmanship. The event was graced by Manoj Pawa, Amit Gandhare and the Directors of KATexpert Dr Arumita Pawa and Krish Vyas.",
-    rightImage: null
+    rightImage: "/assets/gallery/2026/05/3.jpeg"
   }
 ];
 
@@ -448,7 +448,7 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="bg-slate-50/50 pt-32 pb-12 font-sans text-slate-800" id="about-tabbed-page-root">
+    <div className="bg-slate-50/50 pt-20 pb-12 font-sans text-slate-800" id="about-tabbed-page-root">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Back Button */}
@@ -464,14 +464,14 @@ export default function AboutPage() {
         </div>
 
         {/* Navigation Tabs Bar - Inspired by the original about-us header layout */}
-        <div className="flex flex-wrap justify-center items-center gap-1 sm:gap-2 mb-12 border-b border-slate-200 pb-4" id="about-page-tab-bar">
+        <div className="flex flex-wrap justify-center items-center gap-1 sm:gap-2 mb-6 border-b border-slate-200 pb-4" id="about-page-tab-bar">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.id;
             return (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl text-sm font-bold tracking-wide transition-all duration-200 cursor-pointer ${
+                className={`px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-sm font-bold tracking-wide transition-all duration-200 cursor-pointer ${
                   isActive
                     ? 'bg-brand-blue text-white shadow-lg shadow-brand-blue/15 scale-102'
                     : 'text-brand-blue hover:bg-slate-100 hover:scale-101'
@@ -496,7 +496,7 @@ export default function AboutPage() {
           >
              {/* ABOUT US TAB VIEW */}
             {activeTab === 'About' && (
-              <div id="tab-pane-about-us" className="max-w-5xl mx-auto px-4 sm:px-8 py-6 space-y-12">
+              <div id="tab-pane-about-us" className="max-w-5xl mx-auto px-4 sm:px-8 pt-1 pb-6 space-y-12">
                 {/* About Header Hero */}
                 <div className="text-center max-w-3xl mx-auto mb-8" id="about-hero">
                   <span className="text-[11px] font-bold text-[#ea580c] uppercase tracking-widest bg-brand-orange/10 px-3.5 py-1.5 rounded-full inline-block mb-3">
@@ -656,17 +656,17 @@ export default function AboutPage() {
 
             {/* FACULTY TAB VIEW */}
             {activeTab === 'Faculty' && (
-              <div id="tab-pane-faculty" className="max-w-5xl mx-auto bg-white border border-slate-100 rounded-3xl p-6 sm:p-8 shadow-sm text-left">
+              <div id="tab-pane-faculty" className="max-w-4xl mx-auto bg-white border border-slate-100 rounded-2xl p-5 sm:p-6 shadow-sm text-left">
                 {/* Header */}
-                <div className="mb-8">
-                  <h2 className="text-2xl font-display font-extrabold text-brand-blue tracking-tight relative inline-block pb-2.5">
+                <div className="mb-6">
+                  <h2 className="text-xl font-display font-extrabold text-brand-blue tracking-tight relative inline-block pb-2">
                     Faculty
-                    <div className="absolute bottom-0 left-0 w-12 h-1 bg-[#ea580c] rounded-full" />
+                    <div className="absolute bottom-0 left-0 w-10 h-1 bg-[#ea580c] rounded-full" />
                   </h2>
                 </div>
 
                 {/* Faculty List */}
-                <div className="space-y-10">
+                <div className="space-y-8">
                   {FACULTY.map((member, idx) => {
                     // Helper function to render paragraphs and lists dynamically
                     const renderBioParagraphs = (paragraphs) => {
@@ -689,7 +689,7 @@ export default function AboutPage() {
                           if (inList) {
                             const listKey = `list-${pIdx}`;
                             elements.push(
-                              <ul key={listKey} className="list-disc pl-5 space-y-1.5 text-slate-700 text-xs md:text-sm my-3">
+                              <ul key={listKey} className="list-disc pl-5 space-y-1 text-slate-700 text-[11px] md:text-xs my-2.5">
                                 {currentListItems.map((item, i) => (
                                   <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
                                 ))}
@@ -700,7 +700,7 @@ export default function AboutPage() {
                           elements.push(
                             <p
                               key={pIdx}
-                              className="text-slate-700 text-xs md:text-sm leading-relaxed"
+                              className="text-slate-700 text-[11px] md:text-xs leading-relaxed"
                               dangerouslySetInnerHTML={{
                                 __html: p
                                   .replace(/Personal Interviews \(PI\)/g, "<strong>Personal Interviews (PI)</strong>")
@@ -715,7 +715,7 @@ export default function AboutPage() {
 
                       if (inList && currentListItems.length > 0) {
                         elements.push(
-                          <ul key="final-list" className="list-disc pl-5 space-y-1.5 text-slate-700 text-xs md:text-sm my-3">
+                          <ul key="final-list" className="list-disc pl-5 space-y-1 text-slate-700 text-[11px] md:text-xs my-2.5">
                             {currentListItems.map((item, i) => (
                               <li key={i} dangerouslySetInnerHTML={{ __html: item }} />
                             ))}
@@ -728,10 +728,10 @@ export default function AboutPage() {
 
                     return (
                       <div key={member.name} id={member.slug} className="scroll-mt-32">
-                        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+                        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 items-start">
                           {/* Left Column: Photo */}
-                          <div className="col-span-12 md:col-span-3 flex justify-center md:justify-start">
-                            <div className="w-full max-w-[180px] aspect-[3/4] rounded-2xl overflow-hidden shadow-md border border-slate-100 bg-slate-50 flex items-center justify-center">
+                          <div className="col-span-12 md:col-span-2 flex justify-center md:justify-start">
+                            <div className="w-full max-w-[140px] aspect-[3/4] rounded-xl overflow-hidden shadow-md border border-slate-100 bg-slate-50 flex items-center justify-center">
                               {member.image ? (
                                 <img
                                   src={member.image}
@@ -740,24 +740,24 @@ export default function AboutPage() {
                                 />
                               ) : (
                                 <div className="w-full h-full flex items-center justify-center bg-brand-blue text-white">
-                                  <span className="text-xl font-bold font-display">{member.name[0]}</span>
+                                  <span className="text-lg font-bold font-display">{member.name[0]}</span>
                                 </div>
                               )}
                             </div>
                           </div>
 
                           {/* Right Column: Bio */}
-                          <div className="col-span-12 md:col-span-9 space-y-3">
+                          <div className="col-span-12 md:col-span-10 space-y-2">
                             <div>
-                              <h3 className="text-xl font-display font-extrabold text-brand-blue tracking-tight">
+                              <h3 className="text-lg font-display font-extrabold text-brand-blue tracking-tight">
                                 {member.name}
                               </h3>
-                              <p className="mt-1 text-[11px] md:text-xs font-semibold text-[#ea580c] leading-relaxed uppercase tracking-wider">
+                              <p className="mt-1 text-[10px] md:text-[11px] font-semibold text-[#ea580c] leading-relaxed uppercase tracking-wider">
                                 {member.designation}
                               </p>
                             </div>
 
-                            <div className="space-y-3">
+                            <div className="space-y-2">
                               {renderBioParagraphs(member.longBio)}
                             </div>
                           </div>
@@ -765,7 +765,7 @@ export default function AboutPage() {
 
                         {/* Orange Divider between rows */}
                         {idx < FACULTY.length - 1 && (
-                          <div className="w-full border-t border-[#ea580c] my-8" />
+                          <div className="w-full border-t border-[#ea580c] my-6" />
                         )}
                       </div>
                     );
@@ -776,7 +776,7 @@ export default function AboutPage() {
 
             {/* GALLERY TAB VIEW */}
             {activeTab === 'Gallery' && (
-              <div id="tab-pane-gallery" className="max-w-5xl mx-auto px-4 sm:px-8 py-6 space-y-8">
+              <div id="tab-pane-gallery" className="max-w-5xl mx-auto px-4 sm:px-8 pt-1 pb-6 space-y-8">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-6">
                   <span className="text-[11px] font-bold text-brand-orange uppercase tracking-widest bg-brand-orange/10 px-3.5 py-1.5 rounded-full inline-block mb-3">
@@ -829,7 +829,7 @@ export default function AboutPage() {
                           className="group relative overflow-hidden rounded-2xl bg-slate-100 aspect-square cursor-zoom-in border border-slate-200/60 shadow-sm"
                         >
                           <img
-                            src={item.src}
+                            src={item.full}
                             alt={item.category}
                             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                             loading="lazy"
@@ -941,7 +941,7 @@ export default function AboutPage() {
 
             {/* CONTACT COORD TAB VIEW */}
             {activeTab === 'Contact' && (
-              <div id="tab-pane-contact" className="max-w-5xl mx-auto px-4 sm:px-8 py-6 space-y-8">
+              <div id="tab-pane-contact" className="max-w-5xl mx-auto px-4 sm:px-8 pt-1 pb-6 space-y-8">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-10">
                   <span className="text-[11px] font-bold text-brand-orange uppercase tracking-widest bg-brand-orange/10 px-3.5 py-1.5 rounded-full inline-block mb-3">

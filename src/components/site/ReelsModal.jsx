@@ -62,13 +62,24 @@ export function ReelsModal({ open, items, startId, onClose }) {
             transition={{ type: "spring", damping: 26 }}
             className="relative w-full h-[85vh] max-w-[340px] rounded-2xl overflow-hidden shadow-2xl bg-black border border-white/10"
           >
-            <iframe
-              src={`https://www.youtube.com/embed/${current.youtubeId}?autoplay=1&loop=1&playlist=${current.youtubeId}&rel=0&modestbranding=1&playsinline=1`}
-              title={current.title}
-              allow="autoplay; encrypted-media; picture-in-picture"
-              allowFullScreen
-              className="absolute inset-0 h-full w-full z-0"
-            />
+            {current.youtubeId ? (
+              <iframe
+                src={`https://www.youtube.com/embed/${current.youtubeId}?autoplay=1&loop=1&playlist=${current.youtubeId}&rel=0&modestbranding=1&playsinline=1`}
+                title={current.title}
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full z-0"
+              />
+            ) : (
+              <video
+                src={current.videoUrl}
+                controls
+                autoPlay
+                loop
+                playsInline
+                className="absolute inset-0 h-full w-full z-0 object-cover"
+              />
+            )}
             
             {/* Overlay Gradients */}
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-black/30 z-10" />

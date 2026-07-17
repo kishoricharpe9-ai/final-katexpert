@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { BRAND } from "@/lib/site-data";
 
 function embedUrl(t) {
   return `https://www.youtube.com/embed/${t.youtubeId}?autoplay=1&rel=0&modestbranding=1`;
@@ -77,14 +78,24 @@ export function VideoModal({
                 
                 {/* Embedded Player Component Panel */}
                 <div className="relative aspect-video w-full bg-black flex items-center justify-center">
-                  <iframe
-                    src={embedUrl(testimonial)}
-                    title={testimonial.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="h-full w-full absolute inset-0"
-                    key={testimonial.id}
-                  />
+                  {testimonial.youtubeId ? (
+                    <iframe
+                      src={embedUrl(testimonial)}
+                      title={testimonial.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="h-full w-full absolute inset-0"
+                      key={testimonial.id}
+                    />
+                  ) : (
+                    <video
+                      src={testimonial.videoUrl}
+                      controls
+                      autoPlay
+                      className="h-full w-full absolute inset-0 object-contain"
+                      key={testimonial.id}
+                    />
+                  )}
                 </div>
 
                 {/* Sidebar Detail Card Blocks */}
@@ -113,9 +124,14 @@ export function VideoModal({
                     “{testimonial.quote}”
                   </blockquote>
 
-                  <button className="mt-2 rounded-lg bg-orange-gradient w-full py-2 text-xs font-bold text-white shadow-orange tracking-wide transition-all active:scale-[0.98]">
+                  <a
+                    href={`https://wa.me/${BRAND.whatsapp}?text=Hi%20KAT%20Expert,%20I'd%20like%20free%20counselling`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 rounded-lg bg-orange-gradient w-full py-2 text-xs font-bold text-white shadow-orange tracking-wide transition-all active:scale-[0.98] inline-block text-center"
+                  >
                     Book Free Counselling
-                  </button>
+                  </a>
                 </div>
               </div>
 
@@ -135,7 +151,7 @@ export function VideoModal({
                       >
                         <div className="relative aspect-video overflow-hidden rounded-md bg-black">
                           <img
-                            src={`https://ytimg.com{r.youtubeId}/hqdefault.jpg`}
+                            src={r.youtubeId ? `https://i.ytimg.com/vi/${r.youtubeId}/hqdefault.jpg` : "/assets/placeholder-video.png"}
                             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                             loading="lazy"
                             alt={r.name}

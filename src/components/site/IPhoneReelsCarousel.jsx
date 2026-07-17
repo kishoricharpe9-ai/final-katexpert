@@ -60,31 +60,53 @@ export function IPhoneReelsCarousel({ items, onVideoClick }) {
   // Render a single phone frame content
   const renderPhoneScreen = (item, isCenter) => {
     const youtubeId = item.youtubeId;
+    const isHosted = !youtubeId && item.videoUrl;
     
     // Auto-playing embedded player configuration for the active center phone
-    const autoplayUrl = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=${isMuted ? 1 : 0}&controls=0&modestbranding=1&loop=1&playlist=${youtubeId}&rel=0&playsinline=1&enablejsapi=1&showinfo=0`;
+    const autoplayUrl = youtubeId ? `https://www.youtube.com/embed/${youtubeId}?autoplay=1&mute=${isMuted ? 1 : 0}&controls=0&modestbranding=1&loop=1&playlist=${youtubeId}&rel=0&playsinline=1&enablejsapi=1&showinfo=0` : '';
     
     // Thumbnail preview for non-center items
-    const thumbnailUrl = `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
+    const thumbnailUrl = youtubeId ? `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg` : "/assets/placeholder-video.png";
 
     return (
       <div className="relative w-full h-full bg-black select-none overflow-hidden">
         {isCenter ? (
-          <iframe
-            src={autoplayUrl}
-            title={item.title}
-            allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
-            className="absolute inset-0 w-full h-full object-cover scale-[1.35] z-0 pointer-events-none"
-            style={{ border: "none" }}
-          />
+          isHosted ? (
+            <video
+              src={item.videoUrl}
+              autoPlay
+              muted={isMuted}
+              loop
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover z-0"
+              style={{ border: "none" }}
+            />
+          ) : (
+            <iframe
+              src={autoplayUrl}
+              title={item.title}
+              allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+              className="absolute inset-0 w-full h-full object-cover scale-[1.35] z-0 pointer-events-none"
+              style={{ border: "none" }}
+            />
+          )
         ) : (
           <div className="absolute inset-0 w-full h-full z-0">
-            <img
-              src={thumbnailUrl}
-              alt={item.name}
-              className="w-full h-full object-cover opacity-80 filter blur-[1px]"
-              loading="lazy"
-            />
+            {isHosted ? (
+              <video
+                src={item.videoUrl}
+                muted
+                playsInline
+                className="w-full h-full object-cover opacity-80 filter blur-[1px]"
+              />
+            ) : (
+              <img
+                src={thumbnailUrl}
+                alt={item.name}
+                className="w-full h-full object-cover opacity-80 filter blur-[1px]"
+                loading="lazy"
+              />
+            )}
             <div className="absolute inset-0 bg-black/40" />
           </div>
         )}
@@ -112,20 +134,27 @@ export function IPhoneReelsCarousel({ items, onVideoClick }) {
           {/* Spacer */}
           <div />
 
-          {/* Bottom Student Bio Detail */}
           <div className="space-y-2 text-left">
-            <div className="flex flex-wrap items-center gap-1.5">
-              <span className="rounded-full bg-orange-gradient px-2 py-0.5 text-[9px] font-black uppercase tracking-wider text-white shadow-orange">
-                {item.exam}
-              </span>
-              <span className="rounded-md bg-white/10 px-1.5 py-0.5 text-[9px] font-bold text-white/90 backdrop-blur">
-                {item.score}
-              </span>
-            </div>
+            {(item.exam || item.score) && (
+              <div className="flex flex-wrap items-center gap-1.5">
+                {item.exam && (
+                  <span className="rounded-full bg-orange-gradient px-2 py-0.5 text-[9px] font-black uppercase tracking-wider text-white shadow-orange">
+                    {item.exam}
+                  </span>
+                )}
+                {item.score && (
+                  <span className="rounded-md bg-white/10 px-1.5 py-0.5 text-[9px] font-bold text-white/90 backdrop-blur">
+                    {item.score}
+                  </span>
+                )}
+              </div>
+            )}
             
             <div>
               <h4 className="text-sm font-extrabold tracking-tight leading-none text-white">{item.name}</h4>
-              <p className="text-[10px] text-white/80 font-medium mt-0.5">{item.college}</p>
+              {item.college && (
+                <p className="text-[10px] text-white/80 font-medium mt-0.5">{item.college}</p>
+              )}
             </div>
 
             {isCenter ? (

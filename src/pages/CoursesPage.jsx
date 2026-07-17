@@ -105,8 +105,17 @@ export default function CoursesPage() {
               const isFeatured = course.slug === "cat" || course.slug === "mba-cet";
               
               // Extract duration & mode dynamically
-              const durationObj = course.overview?.find(o => o.label === "Duration");
-              const duration = durationObj ? durationObj.value : "4 Months";
+              const durationMap = {
+                cat: "12 Months",
+                clat: "10 Months",
+                ipmat: "2 years / 1 year",
+                "mba-cet": "6 Months",
+                "mca-cet": "6 Months",
+                crt: "4 Months",
+                cuet: "4 Months",
+                set: "4 Months",
+              };
+              const duration = durationMap[course.slug] || "4 Months";
               const mode = "Offline";
 
               return (

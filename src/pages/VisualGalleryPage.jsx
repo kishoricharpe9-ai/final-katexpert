@@ -155,7 +155,7 @@ function GalleryCard({ item, onOpen }) {
       <div className="relative overflow-hidden rounded-xl bg-slate-100">
         {inView ? (
           <img
-            src={item.src}
+            src={item.full}
             alt={`${item.category} moment`}
             loading="lazy"
             className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-103"

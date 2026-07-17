@@ -92,46 +92,59 @@ export default function McaCetPage() {
       {/* React Page Hero Section */}
       <section className="hero-section mca-hero animate-on-scroll">
         <div className="container-course hero-container">
-          <div className="hero-center-layout">
-            <div className="mca-badge">
-              <span className="badge-dot">•</span>
-              <span className="badge-text">IM CERTIFIED COACHING</span>
-            </div>
-            <h1 className="hero-title">
-              Master the <span className="highlight">MCA CET</span> <br /> with Academic Rigor
-            </h1>
-            <p className="hero-description">
-              Prepare smarter with our comprehensive MCA CET Test Series. The perfect toolkit for aspirants aiming for top MCA colleges across Maharashtra.
-            </p>
+          <div className="grid-hero">
+            <div className="hero-left">
+              <div className="mca-badge">
+                <span className="badge-dot">•</span>
+                <span className="badge-text">IM CERTIFIED COACHING</span>
+              </div>
+              <h1 className="hero-title">
+                Master the <span className="highlight">MCA CET</span> <br /> with Academic Rigor
+              </h1>
+              <p className="hero-description">
+                Prepare smarter with our comprehensive MCA CET Test Series. The perfect toolkit for aspirants aiming for top MCA colleges across Maharashtra.
+              </p>
 
-            {/* Key stats row */}
-            <div className="stats-row">
-              <div className="stat-card">
-                <span className="stat-num">25+</span>
-                <span className="stat-lbl">Full Mock Tests</span>
+              {/* Key stats row */}
+              <div className="stats-row">
+                <div className="stat-card">
+                  <span className="stat-num">25+</span>
+                  <span className="stat-lbl">Full Mock Tests</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-num">100+</span>
+                  <span className="stat-lbl">Topic Tests</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-num">99%</span>
+                  <span className="stat-lbl">Success Rate</span>
+                </div>
               </div>
-              <div className="stat-card">
-                <span className="stat-num">100+</span>
-                <span className="stat-lbl">Topic Tests</span>
-              </div>
-              <div className="stat-card">
-                <span className="stat-num">99%</span>
-                <span className="stat-lbl">Success Rate</span>
+
+              <div className="hero-actions-container">
+                <a href="/#contact" className="btn btn-primary cta-btn">
+                  <span>Start Free Trial</span>
+                </a>
+                <a 
+                  href="/resources/docs/MAH_MCA_CET_2026_Syllabus.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn btn-secondary mca-outlined-btn"
+                >
+                  Download Syllabus
+                </a>
               </div>
             </div>
-
-            <div className="hero-actions-container">
-              <a href="/#contact" className="btn btn-primary cta-btn">
-                <span>Start Free Trial</span>
-              </a>
-              <a 
-                href="/resources/docs/MAH_MCA_CET_2026_Syllabus.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn btn-secondary mca-outlined-btn"
-              >
-                Download Syllabus
-              </a>
+            <div className="hero-right relative">
+              <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-[#ea580c]/30 via-[#ea580c]/5 to-transparent blur-2xl" aria-hidden />
+              <div className="relative rounded-2xl border border-slate-200/50 bg-slate-50/50 p-2 shadow-soft">
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop"
+                  alt="MCA CET Prep"
+                  className="w-full aspect-[16/10] rounded-xl object-cover max-h-72"
+                  loading="eager"
+                />
+              </div>
             </div>
           </div>
         </div>

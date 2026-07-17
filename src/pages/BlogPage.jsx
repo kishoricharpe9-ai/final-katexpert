@@ -73,21 +73,21 @@ export default function BlogPage() {
         </div>
 
         {/* Blog Posts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blogs-grid">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5" id="blogs-grid">
           {gridPosts.map((blog, idx) => (
             <motion.article
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
+              transition={{ delay: idx * 0.05 }}
               key={blog.id}
-              className="bg-white border border-slate-100 p-5 rounded-3xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
+              className="bg-white border border-slate-100 p-4 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between"
             >
-              <div className="space-y-4 text-left">
+              <div className="space-y-3 text-left">
                 {blog.img && (
                   <button 
                     onClick={() => setSelectedPost(blog)}
-                    className="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-100 border border-slate-100 cursor-pointer block text-left p-0 w-full"
+                    className="aspect-[16/9] w-full rounded-xl overflow-hidden bg-slate-100 border border-slate-100 cursor-pointer block text-left p-0 w-full"
                   >
                     <img 
                       src={blog.img} 
@@ -96,11 +96,11 @@ export default function BlogPage() {
                     />
                   </button>
                 )}
-                <div className="space-y-2">
-                  <span className="text-[10px] font-bold text-brand-orange uppercase bg-brand-orange/10 px-3 py-1 rounded-full inline-block">
+                <div className="space-y-1.5">
+                  <span className="text-[9px] font-bold text-brand-orange uppercase bg-brand-orange/10 px-2 py-0.5 rounded-full inline-block">
                     {blog.category}
                   </span>
-                  <h3 className="text-base font-bold text-brand-blue font-display hover:text-[#ea580c] transition-colors leading-snug">
+                  <h3 className="text-xs font-bold text-brand-blue font-display hover:text-[#ea580c] transition-colors leading-snug">
                     <button 
                       onClick={() => setSelectedPost(blog)}
                       className="text-left font-bold text-brand-blue font-display hover:text-[#ea580c] transition-colors leading-snug cursor-pointer p-0 bg-transparent border-0"
@@ -108,21 +108,21 @@ export default function BlogPage() {
                       {blog.title}
                     </button>
                   </h3>
-                  <p className="text-xs text-gray-500 leading-relaxed font-medium line-clamp-3">
+                  <p className="text-[11px] text-gray-500 leading-relaxed font-medium line-clamp-3">
                     {blog.excerpt}
                   </p>
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-50 flex items-center justify-between text-xs text-gray-400 font-semibold">
+              <div className="mt-4 pt-3 border-t border-slate-50 flex items-center justify-between text-[11px] text-gray-400 font-semibold">
                 <div className="flex items-center gap-1.5">
-                  <span className="text-[10px]">{blog.date}</span>
+                  <span className="text-[9px]">{blog.date}</span>
                 </div>
                 <button 
                   onClick={() => setSelectedPost(blog)}
-                  className="text-brand-blue hover:text-brand-orange flex items-center gap-1 font-bold text-xs cursor-pointer p-0 bg-transparent border-0"
+                  className="text-brand-blue hover:text-brand-orange flex items-center gap-1 font-bold text-[11px] cursor-pointer p-0 bg-transparent border-0"
                 >
-                  Read <ArrowRight className="w-3.5 h-3.5" />
+                  Read <ArrowRight className="w-3 h-3" />
                 </button>
               </div>
             </motion.article>

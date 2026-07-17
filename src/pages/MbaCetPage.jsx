@@ -85,33 +85,46 @@ export default function MbaCetPage() {
       {/* React Page Hero Section */}
       <section className="hero-section mca-hero animate-on-scroll" id="mbaHeroSection">
         <div className="container-course hero-container">
-          <div className="hero-center-layout">
-            <div className="mba-badge" id="mbaBadge">
-              <span className="badge-dot">•</span>
-              <span className="badge-text">1M CERTIFIED COACHING - MASTERCLASS 2026</span>
-            </div>
-            <h1 className="hero-title" id="mbaHeroTitle">
-              Master the <span className="highlight">Maharashtra</span> <br /> MBA CET Roadmap
-            </h1>
-            <p className="hero-description" id="mbaHeroDesc">
-              Prepare for Maharashtra's top B-schools like JBIMS, SIMSREE, PUMBA, and Welingkar with our ultimate Test Series.
-            </p>
+          <div className="grid-hero">
+            <div className="hero-left">
+              <div className="mba-badge" id="mbaBadge">
+                <span className="badge-dot">•</span>
+                <span className="badge-text">1M CERTIFIED COACHING - MASTERCLASS 2026</span>
+              </div>
+              <h1 className="hero-title" id="mbaHeroTitle">
+                Master the <span className="highlight">Maharashtra</span> <br /> MBA CET Roadmap
+              </h1>
+              <p className="hero-description" id="mbaHeroDesc">
+                Prepare for Maharashtra's top B-schools like JBIMS, SIMSREE, PUMBA, and Welingkar with our ultimate Test Series.
+              </p>
 
-            <div className="hero-actions-container" style={{ marginTop: '2rem' }}>
-              <a href="/#contact" className="btn-3d-orange" id="btnHeroCta">
-                <span>Start Free Trial</span>
-                <ArrowRight style={{ marginLeft: '0.5rem', width: '18px', height: '18px' }} />
-              </a>
-              <a 
-                href="/resources/docs/MAH_MBA_CET_2026_Syllabus.pdf" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="btn-3d-blue-outline"
-                id="btnHeroDownload"
-              >
-                <Download className="w-[18px] h-[18px] mr-2 inline" />
-                <span>Download Syllabus</span>
-              </a>
+              <div className="hero-actions-container" style={{ marginTop: '2rem' }}>
+                <a href="/#contact" className="btn-3d-orange" id="btnHeroCta">
+                  <span>Start Free Trial</span>
+                  <ArrowRight style={{ marginLeft: '0.5rem', width: '18px', height: '18px' }} />
+                </a>
+                <a 
+                  href="/resources/docs/MAH_MBA_CET_2026_Syllabus.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn-3d-blue-outline"
+                  id="btnHeroDownload"
+                >
+                  <Download className="w-[18px] h-[18px] mr-2 inline" />
+                  <span>Download Syllabus</span>
+                </a>
+              </div>
+            </div>
+            <div className="hero-right relative">
+              <div className="absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-[#ea580c]/30 via-[#ea580c]/5 to-transparent blur-2xl" aria-hidden />
+              <div className="relative rounded-2xl border border-slate-200/50 bg-slate-50/50 p-2 shadow-soft">
+                <img
+                  src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop"
+                  alt="MBA CET Prep"
+                  className="w-full aspect-[16/10] rounded-xl object-cover max-h-72"
+                  loading="eager"
+                />
+              </div>
             </div>
           </div>
         </div>
