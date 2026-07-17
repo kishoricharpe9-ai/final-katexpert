@@ -23,7 +23,10 @@ import {
   ArrowRight,
   ArrowLeft,
   Play,
-  Scale
+  Scale,
+  Target,
+  Eye,
+  Heart
 } from 'lucide-react';
 import { CONTACT_INFO, COURSES, FACULTY, TOPPERS, TESTIMONIALS } from "@/lib/site-data";
 import DossierDrawer from "@/components/site/DossierDrawer";
@@ -227,11 +230,6 @@ function AboutVideoCard({ video }) {
             <span className="text-[9px] font-bold text-brand-orange uppercase bg-brand-orange/5 px-2 py-0.5 rounded-full">
               {video.exam}
             </span>
-            {video.score && (
-              <span className="text-[9px] font-bold text-brand-blue uppercase bg-brand-blue/5 px-2 py-0.5 rounded-full">
-                {video.score}
-              </span>
-            )}
           </div>
           <h3 className="font-display font-bold text-brand-blue text-xs leading-normal">
             {video.title}
@@ -242,7 +240,6 @@ function AboutVideoCard({ video }) {
         </div>
         <div className="mt-3 pt-2.5 border-t border-slate-50 flex items-center justify-between text-[10px] font-bold text-gray-400">
           <span>{video.name}</span>
-          <span className="text-brand-blue">{video.college}</span>
         </div>
       </div>
     </div>
@@ -567,17 +564,17 @@ export default function AboutPage() {
                     {[
                       {
                         title: "MISSION",
-                        iconUrl: "https://katexperts.com/wp-content/uploads/2025/04/download.png",
+                        icon: <Target className="w-5 h-5 text-brand-orange" />,
                         text: "We’re here to support every MBA dream with the right guidance, honest mentoring, and smart preparation. From your first step to the exam, we walk with you—helping you grow, stay confident, and reach the B-school you’ve set your heart on."
                       },
                       {
                         title: "VISION",
-                        iconUrl: "https://katexperts.com/wp-content/uploads/2025/04/eye.png",
+                        icon: <Eye className="w-5 h-5 text-brand-orange" />,
                         text: "To become the most trusted and result-oriented MBA entrance coaching institute in India, empowering every aspirant to realize their dream of getting into top B-schools through excellence in teaching, mentoring, and innovation."
                       },
                       {
                         title: "VALUES",
-                        iconUrl: "https://katexperts.com/wp-content/uploads/2025/04/social-responsibility.png",
+                        icon: <Heart className="w-5 h-5 text-brand-orange" />,
                         text: "We believe every student brings a dream that deserves real care and honest guidance. You’re not just here to crack an exam—you’re here to grow, to struggle, to believe in yourself a little more each day. And we’re here to walk that journey with you. We value truth over hype, effort over perfection, and people over numbers. Through every high and low, we’ll show up—for your goals, your growth, and your story. Because to us, you’re never just a student. You’re someone chasing something that matters—and we’re honored to be part of that."
                       }
                     ].map((item) => (
@@ -590,15 +587,7 @@ export default function AboutPage() {
                         <div className="absolute top-0 right-0 w-24 h-24 bg-brand-orange/5 rounded-bl-full -z-1" />
                         
                         <div className="w-11 h-11 bg-slate-50 border border-slate-100/80 rounded-2xl flex items-center justify-center mb-4 shadow-sm p-2.5 shrink-0">
-                          <img
-                            src={item.iconUrl}
-                            alt={item.title}
-                            className="w-full h-full object-contain filter hover:scale-105 transition-transform"
-                            onError={(e) => {
-                              // Fallback if image fails to load
-                              e.target.style.display = 'none';
-                            }}
-                          />
+                          {item.icon}
                         </div>
                         
                         <h3 className="text-sm sm:text-base font-display font-bold text-brand-blue tracking-wide mb-2 flex items-center">
