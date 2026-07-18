@@ -418,7 +418,7 @@ function Navbar() {
   const closeMobile = () => setOpen(false);
 
   const tickerItems = Array(12).fill(
-    " ADMISSIONS OPEN FOR BATCH 2026-27 • CRACK CAT, CLAT, IPMAT & CET • ENROLL NOW FOR EXPERT MENTORSHIP!"
+    " ADMISSIONS OPEN FOR BATCH 2026-27-28 • CRACK CAT, CLAT, IPMAT & CET • ENROLL NOW FOR EXPERT MENTORSHIP!"
   );
 
   return (

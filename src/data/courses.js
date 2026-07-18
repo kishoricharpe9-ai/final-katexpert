@@ -50,7 +50,7 @@ const cat = {
     { label: "Duration", value: "10 – 18 Months" },
     { label: "Learning Mode", value: "Offline Classroom" },
     { label: "Batch Starts", value: "August 2027" },
-    { label: "Mock Tests", value: "25+ Full-length" },
+    { label: "Mock Tests", value: "Topic wise and sectional mocks" },
     { label: "Mentorship", value: "1-on-1 Personal" },
     { label: "Material", value: "Printed + Online" },
   ],
@@ -60,7 +60,8 @@ const cat = {
     { title: "Daily Practice & Doubt Solving", description: "Topic-wise assignments and daily practice questions with continuous doubt clearing." },
     { title: "Regular Mocks & Analysis", description: "Detailed post-mock analysis to track progress and fine-tune your strategy." },
     { title: "Profile Building", description: "One-on-one mentorship and profile building for B-school applications and interviews." },
-    { title: "GD-PI Preparation", description: "Workshops on time management, strategy and GD-PI for the final selection process." },
+    { title: "GD | PI | WAT Preparation", description: "Workshops on time management, strategy and GD-PI for the final selection process." },
+    { title: "Intership Program", description: "We provide internships as required by your college —through KatExpert’s tie-ups with organizations — timed around your CAT prep so your exam preparation stays smooth and uninterrupted." },
   ],
   journey: [
     { title: "Foundation", description: "Core concepts across VARC, DILR and QA." },

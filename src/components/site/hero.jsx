@@ -10,10 +10,10 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-import hero1 from "@/assets/hero-slide-1.png";
+import hero1 from "@/assets/hero1.jpeg";
 import hero2 from "@/assets/hero2.png";
-import hero3 from "@/assets/hero-slide-3.jpg";
 
+import { ADDITIONAL_HERO_SLIDES } from "@/lib/site-data";
 import { Button } from "@/components/ui/button";
 import { useCountUp } from "@/hooks/use-count-up";
 
@@ -26,10 +26,7 @@ const slides = [
     image: hero2,
     title: "Crack CAT, CLAT & IPMAT",
   },
-  {
-  
-    title: "Your Rank Story Starts Today",
-  },
+  ...ADDITIONAL_HERO_SLIDES
 ];
 
 function HeroStat({ value, suffix, label }) {
@@ -75,7 +72,7 @@ export function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 2000);
     return () => clearInterval(timer);
   }, []);
 
@@ -137,7 +134,7 @@ export function Hero() {
    
         <div className="relative min-h-[380px] w-full max-w-lg lg:max-w-none mx-auto lg:pl-4">
 
-          <div className="relative overflow-hidden rounded-2xl bg-slate-100 shadow-xl aspect-[4/3] w-full border border-slate-200">
+          <div className="relative overflow-hidden rounded-2xl bg-white shadow-xl aspect-[3/4] w-full border border-slate-200">
             
             {/* Slide Images */}
             {slides.map((slide, index) => (
@@ -145,7 +142,7 @@ export function Hero() {
                 key={index}
                 src={slide.image}
                 alt=""
-                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${
+                className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-1000 ${
                   current === index ? "opacity-100" : "opacity-0"
                 }`}
               />

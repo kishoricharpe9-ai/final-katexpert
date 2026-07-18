@@ -4,6 +4,14 @@ import faculty1 from "@/assets/faculty-1-aru.jpg";
 import faculty2 from "@/assets/faculty-2-krish.jpg"; 
 import facultySachin from "@/assets/sachin-sahu.png"; 
 
+import heroNaman from "@/assets/hero-slide-naman-air1.jpeg";
+import heroMca from "@/assets/hero-slide-mca-cet-2027.jpeg";
+import heroMba from "@/assets/hero-slide-mba-cet-2027.jpeg";
+import heroCat from "@/assets/hero-slide-cat-2027.png";
+import heroIpmat2027 from "@/assets/hero-slide-ipmat-2027.jpeg";
+import heroIpmat2028 from "@/assets/hero-slide-ipmat-2028.jpeg";
+import heroCatInternship from "@/assets/hero-slide-cat-internship-2027.jpeg"; 
+
 
 
 import p1 from "@/assets/arpit.JPG";
@@ -636,4 +644,35 @@ const CONTACT_INFO = {
   address: BRAND.address
 };
 
-export { BRAND, NAV_LINKS, COURSES, STATS, FACULTY, TOPPERS, TESTIMONIALS, FAQS, CAT_RESOURCES, IPMAT_RESOURCES, CONTACT_INFO };
+const ADDITIONAL_HERO_SLIDES = [
+  {
+    image: heroNaman,
+    title: "Naman Agrawal - AIR 1 (100 Percentile) | Admission Open for MBA & MCA CET"
+  },
+  {
+    image: heroMca,
+    title: "MCA CET 2027 - Batches Starting from 3rd August 2026"
+  },
+  {
+    image: heroMba,
+    title: "MBA CET 2027 - Batches Starting from 3rd August 2026"
+  },
+  {
+    image: heroCat,
+    title: "CAT 2027 - Admissions Open | Start Prep Early"
+  },
+  {
+    image: heroIpmat2027,
+    title: "IPMAT 2027 - 1-Year Classroom Program | Get Into an IIM Right After Class XII"
+  },
+  {
+    image: heroIpmat2028,
+    title: "IPMAT 2028 - 2-Year Classroom Program | Get Into an IIM Right After Class XII"
+  },
+  {
+    image: heroCatInternship,
+    title: "CAT 2027 - Admissions Open | Internship Now Included"
+  }
+];
+
+export { BRAND, NAV_LINKS, COURSES, STATS, FACULTY, TOPPERS, TESTIMONIALS, FAQS, CAT_RESOURCES, IPMAT_RESOURCES, CONTACT_INFO, ADDITIONAL_HERO_SLIDES };
