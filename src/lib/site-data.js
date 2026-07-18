@@ -641,6 +641,7 @@ const FAQS = [
 const CONTACT_INFO = {
   phone: BRAND.phone,
   email: BRAND.email,
+  phoneAlt : BRAND.phoneAlt,
   address: BRAND.address
 };
 

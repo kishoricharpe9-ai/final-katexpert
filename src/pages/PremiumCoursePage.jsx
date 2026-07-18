@@ -4,7 +4,7 @@ import { CoursePage } from "@/components/course/CoursePage";
 
 export default function PremiumCoursePage() {
   const { slug } = useParams();
-  const course = coursesBySlug[slug];
+  const course = coursesBySlug[slug?.toLowerCase()];
 
   if (!course) {
     return (
@@ -21,5 +21,5 @@ export default function PremiumCoursePage() {
     );
   }
 
-  return <CoursePage course={course} />;
+  return <CoursePage key={slug} course={course} />;
 }

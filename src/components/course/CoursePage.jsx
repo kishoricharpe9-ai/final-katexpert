@@ -83,9 +83,9 @@ function Hero({ c }) {
     <section className="relative bg-hero-radial pt-32 pb-12 sm:pt-36 sm:pb-16 overflow-hidden">
       <div className="container-x max-w-5xl mx-auto px-4 sm:px-8 grid gap-8 lg:grid-cols-[1.1fr_1fr] items-center">
         <div className="text-white">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-[#ea580c]">
+          {/* <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-widest text-[#ea580c]">
             <span className="h-1 w-1 rounded-full bg-[#ea580c]" /> {c.code} Program
-          </span>
+          </span> */}
           <h1 className="mt-3.5 text-3xl sm:text-4xl md:text-5xl font-bold text-balance leading-[1.1]">
             {c.name}
           </h1>
@@ -105,7 +105,7 @@ function Hero({ c }) {
           <div className="mt-7 flex flex-wrap gap-2.5">
             <a href="#enquire" className="inline-flex items-center justify-center gap-1.5 text-white px-5 py-2 text-xs font-bold uppercase tracking-wider rounded-full bg-accent hover:bg-accent/90 shadow transition-all cursor-pointer">Enquire Now</a>
             {c.brochureUrl && (
-              <a href={c.brochureUrl} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-1.5 text-white px-5 py-2 text-xs font-bold uppercase tracking-wider rounded-full bg-transparent border border-white/40 hover:bg-white/10 transition-colors cursor-pointer">Download Brochure</a>
+              <a href={c.brochureUrl} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-1.5 text-white px-5 py-2 text-xs font-bold uppercase tracking-wider rounded-full bg-transparent border border-white/40 hover:bg-white/10 transition-colors cursor-pointer">Download Syllabus</a>
             )}
             <a href="tel:+919552388015" className="inline-flex items-center justify-center gap-1.5 text-white px-5 py-2 text-xs font-bold uppercase tracking-wider rounded-full bg-transparent border border-white/40 hover:bg-white/10 transition-colors cursor-pointer">Call Now</a>
           </div>
@@ -117,11 +117,10 @@ function Hero({ c }) {
             <img
               src={c.heroImage}
               alt={`${c.code} — ${c.name}`}
-              className="w-full aspect-[16/10] rounded-xl object-cover max-h-72"
+              className={c.slug === "mba-cet" ? "w-full h-auto rounded-xl" : "w-full aspect-[16/10] rounded-xl object-cover max-h-72"}
               loading="eager"
             />
             <div className="absolute -bottom-4 -left-4 rounded-xl bg-white text-navy shadow-soft px-4 py-3 hidden sm:block">
-              <p className="text-[10px] uppercase tracking-widest text-[#ea580c] font-semibold">Since 2015</p>
               <p className="font-display font-bold text-sm leading-tight">Trusted by 5,000+<br/>students</p>
             </div>
           </div>
@@ -260,7 +259,7 @@ function Curriculum({ c }) {
                   </span>
                   <span className="min-w-0 flex-1">
                     <span className="block font-display text-sm sm:text-base font-bold text-navy">{m.title}</span>
-                    <span className="block text-[10px] text-muted-foreground">{m.items.length} topics</span>
+                    {/* <span className="block text-[10px] text-muted-foreground">{m.items.length} topics</span> */}
                   </span>
                   <svg className={`h-4.5 w-4.5 shrink-0 text-navy transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clipRule="evenodd"/>
@@ -319,10 +318,10 @@ function ExtraSections({ c }) {
   if (!c.extraSections?.length) return null;
   return (
     <section className="py-10 sm:py-12">
-      <div className="container-x max-w-5xl mx-auto px-4 sm:px-8 grid gap-8">
+      <div className="container-x max-w-5xl mx-auto px-4 sm:px-8 grid gap-8 mt-10">
         {c.extraSections.map((s, i) => (
           <div key={s.heading} className={`grid gap-6 lg:grid-cols-[1fr_1.6fr] items-start ${i % 2 ? "lg:flex-row-reverse" : ""}`}>
-            <SectionHeading eyebrow={`Detail ${String(i + 1).padStart(2, "0")}`} title={s.heading} />
+            <SectionHeading title={s.heading} />
             <div className="grid gap-2.5">
               {s.body.map((line) => (
                 <div key={line} className="flex items-start gap-2.5 rounded-xl border border-border bg-white p-3.5 hover:border-[#ea580c]/40 transition-colors">
@@ -347,7 +346,7 @@ function Results({ c }) {
         background: "radial-gradient(600px 300px at 20% 20%, color-mix(in oklab, var(--accent) 40%, transparent), transparent 60%)",
       }} />
       <div className="container-x max-w-5xl mx-auto px-4 sm:px-8 relative">
-        <SectionHeading eyebrow="Student Results" title="Numbers that speak for themselves" invert />
+        <SectionHeading title="Numbers that speak for themselves" invert />
         <div ref={ref} className="mt-8 grid gap-4.5 sm:grid-cols-2 lg:grid-cols-4">
           {c.results.map((r, i) => {
             const target = extractNumber(r.value);
@@ -372,7 +371,7 @@ function FAQs({ c }) {
   return (
     <section className="py-10 sm:py-12 bg-cream-mesh" id="faqs">
       <div className="container-x max-w-5xl mx-auto px-4 sm:px-8">
-        <SectionHeading eyebrow="FAQs" title="Frequently asked questions" align="center" />
+        <SectionHeading title="Frequently asked questions" align="center" />
         <div className="mt-8 max-w-2xl mx-auto grid gap-2.5">
           {c.faqs.map((f, i) => {
             const isOpen = open === i;

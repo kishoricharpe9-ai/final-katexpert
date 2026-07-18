@@ -1,3 +1,13 @@
+import catHero from "../assets/cat.jpg";
+import clatHero from "../assets/clat.jpg";
+import ipmatHero from "../assets/ipmat.jpg";
+import mbaCetHero from "../assets/mba-cet.jpg";
+import mcaCetHero from "../assets/mca-cet.jpg";
+import crtHero from "../assets/crt.jpg";
+import cuetHero from "../assets/cuet.jpg";
+import setHero from "../assets/set.jpg";
+import p1 from "@/assets/naman-air1.jpeg";
+
 // KAT Experts — Course content extracted from https://katexperts.com
 // Each course preserves its own unique content from the source pages.
 
@@ -36,7 +46,7 @@ const cat = {
   code: "CAT",
   name: "Common Admission Test",
   tagline: "Your gateway to the IIMs and top B-schools of India.",
-  heroImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop",
+  heroImage: catHero,
   logo: "https://katexperts.com/wp-content/uploads/2026/02/CAT.png",
   description:
     "The Common Admission Test (CAT) is a national-level entrance examination conducted annually for admission into postgraduate management programs. It is primarily used for entry into the prestigious Indian Institutes of Management (IIMs) and several other top business schools across India.",
@@ -60,7 +70,7 @@ const cat = {
     { title: "Daily Practice & Doubt Solving", description: "Topic-wise assignments and daily practice questions with continuous doubt clearing." },
     { title: "Regular Mocks & Analysis", description: "Detailed post-mock analysis to track progress and fine-tune your strategy." },
     { title: "Profile Building", description: "One-on-one mentorship and profile building for B-school applications and interviews." },
-    { title: "GD | PI | WAT Preparation", description: "Workshops on time management, strategy and GD-PI for the final selection process." },
+    { title: "GD | PI | WAT Preparation", description: "WAT on time management, strategy and GD-PI for the final selection process." },
     { title: "Intership Program", description: "We provide internships as required by your college —through KatExpert’s tie-ups with organizations — timed around your CAT prep so your exam preparation stays smooth and uninterrupted." },
   ],
   journey: [
@@ -103,11 +113,15 @@ const cat = {
   ],
   resources: [
     { title: "Printed Study Material" },
-    { title: "Full-length Mocks" },
-    { title: "Sectional Tests" },
-    { title: "Current Affairs Notes" },
+    { title: "Full length mocks / sectional mocks / topic wise mocks" },
+    // { title: "Sectional Tests" },
+    { title: "Current Affairs / GK Sessions" },
     { title: "Personalised Mentorship" },
     { title: "Doubt Solving Sessions" },
+    { title: "Daily target groups" },
+    { title: "Speaking club" },
+    { title: "Read and Grow club" },
+    { title: "Guest lectures/ expert workshops" },
   ],
   results: [
     { label: "Highest Package (IIM A/B/C)", value: "₹70 LPA – ₹1.46 Cr" },
@@ -144,7 +158,7 @@ const cat = {
   ],
   faqs: [
     { q: "What are the key subjects covered in CAT preparation?", a: "CAT preparation covers three sections — Verbal Ability & Reading Comprehension (VARC), Data Interpretation & Logical Reasoning (DILR), and Quantitative Aptitude (QA). Each section is taught with a balance of concept, practice and mock analysis." },
-    { q: "How can I effectively prepare for board exams and CAT simultaneously?", a: "Create a balanced study schedule that covers both your board syllabus and CAT topics. Focus on understanding core concepts, practise problem-solving regularly, and take mock tests. Use study materials aligned with both curricula to ensure comprehensive preparation." },
+    { q: "How can I effectively prepare for semester exams and CAT simultaneously?", a: "Create a balanced study schedule that covers both your semester syllabus and CAT topics. Focus on understanding core concepts, practise problem-solving regularly, and take mock tests. Use study materials aligned with both curricula to ensure comprehensive preparation." },
     ...brandFaqs,
   ],
   cta: { heading: "Ready to start your IIM journey?", sub: "Join KATexpert's flagship CAT program and take your first step toward the top B-schools of India." },
@@ -155,7 +169,7 @@ const clat = {
   code: "CLAT",
   name: "Common Law Admission Test",
   tagline: "Classroom-centric, mentor-driven CLAT preparation for admission to the top NLUs.",
-  heroImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=800&auto=format&fit=crop",
+  heroImage: clatHero,
   logo: "https://katexperts.com/wp-content/uploads/2026/02/CLAT.png",
   description:
     "KATexpert's CLAT Offline Coaching Program is designed to help aspirants crack the Common Law Admission Test through expert-led classroom teaching, personalized study plans and individual mentoring. Targeted strategy sessions, concept-focused learning and proctored full-length mock tests in real exam-like conditions build the accuracy, speed and confidence required to secure admission to the top National Law Universities (NLUs).",
@@ -263,7 +277,7 @@ const ipmat = {
   code: "IPMAT",
   name: "Integrated Program in Management Aptitude Test",
   tagline: "Fully offline, mentor-driven IPMAT preparation with structured modules and updated printed courseware.",
-  heroImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop",
+  heroImage: ipmatHero,
   logo: "https://katexperts.com/wp-content/uploads/2026/02/IPMAT.png",
   description:
     "The KATexpert IPMAT program is delivered fully offline through structured learning modules combining classroom concept teaching, guided problem-solving, in-class practice, short chapter tests and combined module tests — ensuring discipline, conceptual clarity and steady progress.",
@@ -279,7 +293,7 @@ const ipmat = {
     { label: "Material", value: "Printed Books & Worksheets" },
     { label: "Tests", value: "Chapter + Module + Mocks" },
     { label: "GD/PI/WAT", value: "Included" },
-    { label: "Support", value: "WhatsApp + Classroom" },
+    { label: "Support", value: "Offline classes, doubt solving sessions and daily target groups." },
   ],
   whyChoose: [
     { title: "1-on-1 Structured Mentorship", description: "Every student is assigned a personal mentor who guides them throughout the preparation journey — study planning, doubt-solving, performance improvement and exam strategy, all offline and personalised." },
@@ -354,8 +368,8 @@ const ipmat = {
     { title: "Solved Examples & Practice Questions" },
     { title: "In-Class Exercises" },
     { title: "Chapter & Module Tests" },
-    { title: "Full-Length Offline Mocks" },
-    { title: "Dedicated WhatsApp Group" },
+    { title: "Full length/sectional/topic wise mocks" },
+    { title: "Dedicated Daily Target Group" },
     { title: "GK Handouts" },
     { title: "Masterclasses" },
   ],
@@ -379,11 +393,11 @@ const ipmat = {
     {
       heading: "Personal Interview (PI) Preparation",
       body: [
-        "One-on-one mock interviews with expert faculty",
+        "One-on-one mock interviews with expert faculty and IIM alumni",
         "Feedback on communication, personality and content",
-        "Personal questions practice",
-        "Guidance on resume building and answer framing",
+        "Guidance on resume building",
         "Stress interview training and confidence building",
+        "Techniques to stay calm during stress interviews",
       ],
     },
     {
@@ -419,8 +433,8 @@ const mbaCet = {
   code: "MBA CET",
   name: "Maharashtra MBA Common Entrance Test",
   tagline: "All-inclusive MBA CET preparation targeting JBIMS, SIMSREE, PUMBA, Welingkar and Maharashtra's top B-schools.",
-  heroImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=800&auto=format&fit=crop",
-  logo: "https://katexperts.com/wp-content/uploads/2026/02/MBA-CET.png",
+  heroImage: p1,
+  logo: p1,
   description:
     "Prepare for Maharashtra's top B-schools with our all-inclusive MBA CET Test Series designed for serious aspirants targeting JBIMS, SIMSREE, PUMBA, Welingkar and other leading institutes.",
   highlights: [
@@ -435,7 +449,6 @@ const mbaCet = {
     { label: "Sectional Tests", value: "14" },
     { label: "Learning Tools", value: "Study Planner + Challenge Zone" },
     { label: "Target B-Schools", value: "JBIMS, SIMSREE, PUMBA, Welingkar" },
-    { label: "Syllabus PDF", value: "Downloadable" },
   ],
   whyChoose: [
     { title: "25 Full-Length MBA CET Mocks", description: "Simulate the real exam with accurate pattern, difficulty level and time pressure." },
@@ -443,7 +456,6 @@ const mbaCet = {
     { title: "14 Sectional Tests", description: "Sharpen your performance in Quant, Verbal Ability, Logical Reasoning, Visual Reasoning and Data Interpretation." },
     { title: "Challenge Zone", description: "A high-energy practice zone where you compete with peers, track your rank and learn in a game-like environment while improving speed and accuracy." },
     { title: "Smart Study Planner", description: "An adaptive practice tool that helps you stay consistent and exam-ready with a structured daily plan." },
-    { title: "Complete Syllabus PDF", description: "Downloadable KATexpert MBA CET complete syllabus PDF for structured self-study." },
   ],
   journey: [
     { title: "Set Your Deadline", description: "Fix your exam timeline and plan backwards." },
@@ -483,7 +495,7 @@ const mbaCet = {
     { title: "14 Sectional Tests" },
     { title: "Challenge Zone" },
     { title: "Smart Study Planner" },
-    { title: "Complete Syllabus PDF" },
+    { title: "Dedicated daily target whatspp groups" },
   ],
   brochureUrl: "https://katexperts.com/wp-content/uploads/2025/12/CET-Syllabus.docx_compressed.pdf",
   faqs: [
@@ -500,10 +512,10 @@ const mcaCet = {
   code: "MCA CET",
   name: "Maharashtra MCA Common Entrance Test",
   tagline: "A comprehensive MCA CET test series for aspirants targeting top MCA colleges across Maharashtra.",
-  heroImage: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop",
+  heroImage: mcaCetHero,
   logo: "https://katexperts.com/wp-content/uploads/2026/02/MCA-CET.png",
   description:
-    "Prepare smarter with our comprehensive MCA CET Test Series, featuring 25 full-length mock tests and 100+ topic-wise practice tests — the perfect toolkit for aspirants aiming for the top MCA colleges across Maharashtra.",
+    "Prepare smarter with our comprehensive MCA CET Test Series, featuring 25+ full-length mock tests and 100+ topic-wise practice tests — the perfect toolkit for aspirants aiming for the top MCA colleges across Maharashtra.",
   highlights: [
     "25 full-length MCA CET mocks",
     "100+ topic-wise practice tests",
@@ -519,11 +531,11 @@ const mcaCet = {
     { label: "Syllabus PDF", value: "Downloadable" },
   ],
   whyChoose: [
-    { title: "25 Full-Length MCA CET Mocks", description: "Experience the exact exam pattern with realistic difficulty and timing." },
+    { title: "25+ Full-Length MCA CET Mocks", description: "Experience the exact exam pattern with realistic difficulty and timing." },
     { title: "100+ Topic-Wise Practice Tests", description: "Strengthen every chapter in Mathematics, Logical Reasoning, English, Quants and Computer Applications." },
     { title: "Challenge Zone", description: "Boost your performance in a competitive gamified space — solve, challenge peers, improve speed and learn with real-time feedback." },
     { title: "Smart Study Planner", description: "A personalised practice tool that helps you plan, stay consistent and track your progress effortlessly." },
-    { title: "Complete Syllabus PDF", description: "Downloadable KATexpert MCA CET complete syllabus PDF for structured self-study." },
+    { title: "Dedicated Daily Target group", description: "Daily Target Groups to accomplish." },
   ],
   journey: [
     { title: "Set Your Deadline", description: "Fix your exam timeline." },
@@ -562,7 +574,6 @@ const mcaCet = {
     { title: "100+ Topic-Wise Practice Tests" },
     { title: "Challenge Zone" },
     { title: "Smart Study Planner" },
-    { title: "Complete Syllabus PDF" },
   ],
   brochureUrl: "https://katexperts.com/wp-content/uploads/2025/12/MCA-CET-Syllabus.docx-1_compressed.pdf",
   faqs: [
@@ -578,7 +589,7 @@ const crt = {
   code: "CRT",
   name: "Campus Recruitment Training",
   tagline: "A specialised program to prepare you for placement drives — from written tests to HR interviews.",
-  heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+  heroImage: crtHero,
   logo: "https://katexperts.com/wp-content/uploads/2026/02/CRT.png",
   description:
     "Campus Recruitment Training (CRT) is a specialized program designed to prepare students for placement drives conducted by companies during campus recruitment. The goal is to equip students with the necessary skills to confidently crack written tests, group discussions, technical interviews and HR rounds.",
@@ -654,7 +665,7 @@ const cuet = {
   code: "CUET",
   name: "CUET & MH - CET Classroom Program",
   tagline: "Program is an all-inclusive preparation package designed for students aiming to excel in both Common University Entrance Test (CUET UG) and Maharashtra CET (MH-CET).",
-  heroImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop",
+  heroImage: cuetHero,
   logo: "https://katexperts.com/wp-content/uploads/2026/02/IPMAT.png",
   description:
     "The CUET & MH - CET Classroom Program is an all-inclusive preparation package designed for students aiming to excel in both the Common University Entrance Test (CUET UG) and the Maharashtra CET (MH-CET). This program offers structured concept building, physical classes, practice materials, and extensive full-length mock tests to ensure success.",
@@ -665,7 +676,7 @@ const cuet = {
     "Full-length mocks & analysis",
   ],
   overview: [
-    { label: "Duration", value: "4 Months" },
+    { label: "Duration", value: "4 - 6 Months (Batches from October)" },
     { label: "Learning Mode", value: "Offline Classroom" },
     { label: "Mock Tests", value: "15+ Full-length" },
     { label: "Mentorship", value: "1-on-1 Personal" },
@@ -696,7 +707,6 @@ const cuet = {
       items: [
         "Reading comprehension",
         "Vocabulary and grammar",
-        "Synonyms and antonyms",
       ],
     },
   ],
@@ -706,7 +716,7 @@ const cuet = {
     { title: "Full Syllabus Mocks" },
   ],
   faqs: [
-    { q: "What is the duration of the CUET & MH-CET program?", a: "The program spans 4 months of intensive offline classroom training." },
+    { q: "What is the duration of the CUET & MH-CET program?", a: "The program spans 4 - 6 months of intensive offline classroom training." },
     { q: "Which exams are covered?", a: "This program covers both the Central Universities Entrance Test (CUET UG) and the Maharashtra state CET." },
     ...brandFaqs,
   ],
@@ -718,7 +728,7 @@ const set = {
   code: "SET",
   name: "Symbiosis Entrance Test (SET)",
   tagline: "Your gateway for undergraduate admissions across prestigious Symbiosis institutes.",
-  heroImage: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=800&auto=format&fit=crop",
+  heroImage: setHero,
   logo: "https://katexperts.com/wp-content/uploads/2026/02/IPMAT.png",
   description:
     "The Symbiosis Entrance Test (SET – General) is conducted by Symbiosis International (Deemed University) and serves as the primary gateway for undergraduate admissions across various prestigious Symbiosis institutes including SLS, SSE, and SCMS.",
@@ -729,7 +739,7 @@ const set = {
     "Mock test series with instant analytics",
   ],
   overview: [
-    { label: "Duration", value: "4 Months" },
+    { label: "Duration", value: "4 - 6 months" },
     { label: "Learning Mode", value: "Offline Classroom" },
     { label: "Mock Tests", value: "15+ Full-length" },
     { label: "Mentorship", value: "1-on-1 Personal" },

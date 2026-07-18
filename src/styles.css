@@ -274,3 +274,28 @@
     display: none;
   }
 }
+
+/* WordPress blog post custom styling */
+.wp-blog-content p {
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #334155;
+}
+.wp-blog-content h2, .wp-blog-content h3, .wp-blog-content h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+.wp-blog-content ul, .wp-blog-content ol {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+  color: #334155;
+}
+.wp-blog-content li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}

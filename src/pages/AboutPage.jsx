@@ -972,7 +972,7 @@ export default function AboutPage() {
                             <MapPin className="w-4 h-4 text-brand-orange" />
                           </div>
                           <div>
-                            <h4 className="text-xs font-bold text-brand-blue">Campus Address</h4>
+                            <h4 className="text-xs font-bold text-brand-blue">Institute Address</h4>
                             <p className="text-[11px] text-gray-500 mt-0.5 leading-relaxed font-medium">
                               {CONTACT_INFO.address}
                             </p>
@@ -985,7 +985,7 @@ export default function AboutPage() {
                           </div>
                           <div>
                             <h4 className="text-xs font-bold text-brand-blue">Phone Numbers</h4>
-                            <p className="text-[11px] text-gray-500 mt-0.5 font-semibold">{CONTACT_INFO.phone}</p>
+                            <p className="text-[11px] text-gray-500 mt-0.5 font-semibold">{CONTACT_INFO.phone} / {CONTACT_INFO.phoneAlt}</p>
                           </div>
                         </div>
 
@@ -1013,19 +1013,18 @@ export default function AboutPage() {
                       </div>
                     </div>
 
-                    {/* Dark map */}
+                    {/* Interactive Google Map */}
                     <div className="h-56 rounded-3xl overflow-hidden relative border border-slate-100 shadow-md">
-                      <div className="absolute inset-0 bg-slate-900 flex flex-col items-center justify-center text-center p-5">
-                        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]" />
-                        <MapPin className="w-6 h-6 text-brand-orange mb-1.5 animate-bounce" />
-                        <h4 className="text-xs font-bold text-white">KATexpert Dharampeth Campus</h4>
-                        <p className="text-[9px] text-slate-400 mt-0.5 leading-normal max-w-xs font-medium">
-                          Located behind Batukbhai Jewellers in Khare Town, Nagpur.
-                        </p>
-                        <div className="mt-3.5 px-2.5 py-0.5 bg-white/10 backdrop-blur text-[8px] text-slate-300 rounded font-semibold uppercase tracking-wider">
-                          Nagpur Hub - Maharashtra
-                        </div>
-                      </div>
+                      <iframe
+                        src="https://maps.google.com/maps?q=KATexpert%20Dharampeth%20Nagpur&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="KATexpert Dharampeth Campus Map"
+                      ></iframe>
                     </div>
                   </div>
 

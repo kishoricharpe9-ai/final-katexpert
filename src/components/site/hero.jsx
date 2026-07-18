@@ -132,7 +132,7 @@ export function Hero() {
         </motion.div>
 
    
-        <div className="relative min-h-[380px] w-full max-w-lg lg:max-w-none mx-auto lg:pl-4">
+        <div className="relative w-full max-w-[360px] mx-auto lg:pl-4">
 
           <div className="relative overflow-hidden rounded-2xl bg-white shadow-xl aspect-[3/4] w-full border border-slate-200">
             
