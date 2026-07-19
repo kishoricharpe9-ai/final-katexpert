@@ -14,9 +14,9 @@ import p1 from "@/assets/naman-air1.jpeg";
 // Testimonials — shared brand testimonials from KAT Experts homepage.
 export const testimonials = [
   { name: "Khushi Yadav", image: "https://katexperts.com/wp-content/uploads/2025/04/Untitled-design-54.jpg", quote: "Krish sir is the most incredible teacher I ever came across. His unique teaching style helped us to gain clarity of all concepts. He guides us like our own elder brother. Felt really grateful to have him as our mentor." },
-  { name: "Rupali Kale", image: "https://katexperts.com/wp-content/uploads/2026/06/b05de27f-b5e8-4089-b02f-29905aac45e8.jpg", quote: "I am grateful to KATexpert for providing the right mentorship, quality resources, and continuous motivation throughout my MCA CET preparation. Their guidance contributed greatly to my success of securing 97.7 percentile." },
-  { name: "Shimant Bijwe", image: "https://katexperts.com/wp-content/uploads/2026/06/1f96c26a-f23e-4959-9fde-4330b1b98bc5.jpg", quote: "The interactive Kat expert classes made learning enjoyable and helped me stay engaged throughout the course, their proper direction made me to achieve the goal." },
-  { name: "Janhavi Pawaday", image: "https://katexperts.com/wp-content/uploads/2026/06/e3d700df-7c44-432c-a955-32c48547211e.jpg", quote: "I am grateful to the teachers and staff of Kat Expert for their support and guidance. I joined later than most students but teachers helped me to cover my syllabus. I am happy to have scored 88% and I sincerely thank the team for their constant support." },
+  { name: "Rupali Kale", image: "https://katexperts.com/wp-content/uploads/2026/06/b05de27f-b5e8-4089-b02f-29905aac45e8.jpg", quote: "I am grateful to KatExpert for providing the right mentorship, quality resources, and continuous motivation throughout my MCA CET preparation. Their guidance contributed greatly to my success of securing 97.7 percentile." },
+  { name: "Shimant Bijwe", image: "https://katexperts.com/wp-content/uploads/2026/06/1f96c26a-f23e-4959-9fde-4330b1b98bc5.jpg", quote: "The interactive KatExpert classes made learning enjoyable and helped me stay engaged throughout the course, their proper direction made me to achieve the goal." },
+  { name: "Janhavi Pawaday", image: "https://katexperts.com/wp-content/uploads/2026/06/e3d700df-7c44-432c-a955-32c48547211e.jpg", quote: "I am grateful to the teachers and staff of KatExpert for their support and guidance. I joined later than most students but teachers helped me to cover my syllabus. I am happy to have scored 88% and I sincerely thank the team for their constant support." },
   { name: "Nandini Trivedi", image: "https://katexperts.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-21-at-4.26.56-PM.jpeg", quote: "Learning from Arumita ma'am has been one of the most enriching experiences of my life. Her passion for teaching and her unique ability to make complex concepts feel simple truly set her apart." },
   { name: "Pawan Chandiramani", image: "https://katexperts.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-26-at-7.04.47-PM.jpeg", quote: "Learning under Krish Sir has been one of the best parts of my preparation journey. He treats every student like family. His personal attention, constant guidance, and genuine care for our progress make a huge difference." },
   { name: "Vidhi Agrawal", image: "https://katexperts.com/wp-content/uploads/2025/04/WhatsApp-Image-2025-04-21-at-9.35.33-PM.jpeg", quote: "Some teachers leave a mark that stays with you forever — Krish Sir is one of them. His kindness, patience, and genuine care made learning feel exciting and safe. The best sir ever I met in my life." },
@@ -24,7 +24,7 @@ export const testimonials = [
 ];
 
 export const brandFaqs = [
-  { q: "What are the benefits of joining KATexpert?", a: "Joining KATexpert provides expert faculty, a structured curriculum, personalized attention, and high-quality study materials. Students benefit from regular assessments, flexible learning options, and dedicated doubt resolution. The competitive environment and career guidance help ensure effective preparation and success in IIM and NLU entrance exams." },
+  { q: "What are the benefits of joining KatExpert?", a: "Joining KatExpert provides expert faculty, a structured curriculum, personalized attention, and high-quality study materials. Students benefit from regular assessments, flexible learning options, and dedicated doubt resolution. The competitive environment and career guidance help ensure effective preparation and success in IIM and NLU entrance exams." },
   { q: "How can I enroll in a course?", a: "You can enroll by visiting our website and filling out the registration form. Alternatively, you can contact our admissions team via phone or email for assistance with the enrollment process." },
   { q: "What is the fee structure?", a: "Our fee structure varies based on the course and duration. Detailed fee information can be obtained by contacting our admissions team at +91 95523 88015 or +91 99757 17636." },
   { q: "Do you offer online mocks?", a: "Yes, we offer online mocks for various courses to help students assess their preparation. These mock tests are designed to simulate real exam conditions and can be accessed from anywhere." },
@@ -144,7 +144,7 @@ const cat = {
       ],
     },
     {
-      heading: "What We Do at KATexpert",
+      heading: "What We Do at KatExpert",
       body: [
         "A comprehensive and result-oriented CAT preparation program that caters to students from all academic backgrounds.",
         "Workshops, guest lectures and one-on-one mentoring by CAT toppers and IIM, JBIMS and top B-school alumni.",
@@ -161,7 +161,7 @@ const cat = {
     { q: "How can I effectively prepare for semester exams and CAT simultaneously?", a: "Create a balanced study schedule that covers both your semester syllabus and CAT topics. Focus on understanding core concepts, practise problem-solving regularly, and take mock tests. Use study materials aligned with both curricula to ensure comprehensive preparation." },
     ...brandFaqs,
   ],
-  cta: { heading: "Ready to start your IIM journey?", sub: "Join KATexpert's flagship CAT program and take your first step toward the top B-schools of India." },
+  cta: { heading: "Ready to start your IIM journey?", sub: "Join KatExpert's flagship CAT program and take your first step toward the top B-schools of India." },
 };
 
 const clat = {
@@ -238,7 +238,7 @@ const clat = {
     {
       title: "Legal Reasoning",
       items: [
-        "Structured legal aptitude coaching — one of KATexpert's strongest verticals",
+        "Structured legal aptitude coaching — one of KatExpert's strongest verticals",
         "Principle–fact based questions and reasoning approaches",
         "Coverage of key legal concepts and current legal developments",
         "Practice sets designed around latest CLAT trends",
@@ -265,11 +265,11 @@ const clat = {
     { title: "Detailed Performance Reports" },
   ],
   faqs: [
-    { q: "Is the CLAT program fully offline?", a: "Yes — the CLAT program at KATexpert is delivered through offline classroom teaching. Doubt clearing, mocks, PTMs and mentorship are all conducted in person, with a WhatsApp group for updates and support." },
+    { q: "Is the CLAT program fully offline?", a: "Yes — the CLAT program at KatExpert is delivered through offline classroom teaching. Doubt clearing, mocks, PTMs and mentorship are all conducted in person, with a WhatsApp group for updates and support." },
     { q: "How is legal reasoning taught?", a: "Legal reasoning is one of our strongest verticals. Very few institutions in India offer structured legal aptitude tutoring; our faculty covers principle-fact based questions, key legal concepts and current legal developments through class discussions and regular practice sets." },
     ...brandFaqs,
   ],
-  cta: { heading: "Ready to crack CLAT and enter a top NLU?", sub: "Join KATexpert's classroom-centric CLAT program with personalised mentorship, mocks and legal reasoning by trained experts." },
+  cta: { heading: "Ready to crack CLAT and enter a top NLU?", sub: "Join KatExpert's classroom-centric CLAT program with personalised mentorship, mocks and legal reasoning by trained experts." },
 };
 
 const ipmat = {
@@ -354,7 +354,7 @@ const ipmat = {
       ],
     },
     {
-      title: "KATexpert Sessions",
+      title: "KatExpert Sessions",
       items: [
         "Form-filling guidance",
         "Exam updates",
@@ -425,7 +425,7 @@ const ipmat = {
     { q: "Which exams are covered under the IPMAT program?", a: "The IPMAT program covers offline mock tests for IPMAT Indore, IPMAT Rohtak, JIPMAT, CUET, NPAT, SET, Christ, MSUET, St. Xavier's (XET), MAH-CET (BBA/BMS/BBM), Ashoka, Krea, FLAME and Jindal." },
     ...brandFaqs,
   ],
-  cta: { heading: "Ready to build your integrated management future?", sub: "Join KATexpert's fully offline IPMAT program with a personal mentor, printed courseware and structured module tests." },
+  cta: { heading: "Ready to build your integrated management future?", sub: "Join KatExpert's fully offline IPMAT program with a personal mentor, printed courseware and structured module tests." },
 };
 
 const mbaCet = {
@@ -504,7 +504,7 @@ const mbaCet = {
     { q: "What is the Smart Study Planner?", a: "The Smart Study Planner is an adaptive practice tool that helps you set your exam deadline, meet daily goals, tag important questions, adjust workload and revise regularly — keeping preparation consistent." },
     ...brandFaqs,
   ],
-  cta: { heading: "Target JBIMS, SIMSREE, PUMBA and Welingkar with confidence.", sub: "Join KATexpert's all-inclusive MBA CET Test Series with 25 mocks, 100+ topic tests and adaptive study tools." },
+  cta: { heading: "Target JBIMS, SIMSREE, PUMBA and Welingkar with confidence.", sub: "Join KatExpert's all-inclusive MBA CET Test Series with 25 mocks, 100+ topic tests and adaptive study tools." },
 };
 
 const mcaCet = {
@@ -657,7 +657,7 @@ const crt = {
     { q: "What does the CRT program include?", a: "The program includes full-length mocks, sectional tests, structured study material, current affairs updates and personalized mentorship." },
     ...brandFaqs,
   ],
-  cta: { heading: "Get placement-ready with confidence.", sub: "Join KATexpert's Campus Recruitment Training to crack written tests, GDs, technical rounds and HR interviews." },
+  cta: { heading: "Get placement-ready with confidence.", sub: "Join KatExpert's Campus Recruitment Training to crack written tests, GDs, technical rounds and HR interviews." },
 };
 
 const cuet = {
@@ -720,7 +720,7 @@ const cuet = {
     { q: "Which exams are covered?", a: "This program covers both the Central Universities Entrance Test (CUET UG) and the Maharashtra state CET." },
     ...brandFaqs,
   ],
-  cta: { heading: "Prepare for top central & state universities.", sub: "Join the CUET & MH-CET classroom program at KATexpert today." },
+  cta: { heading: "Prepare for top central & state universities.", sub: "Join the CUET & MH-CET classroom program at KatExpert today." },
 };
 
 const set = {
@@ -773,7 +773,7 @@ const set = {
     { q: "What does the SET cover?", a: "It covers General English, Quantitative Aptitude, General Awareness, and Logical & Analytical Reasoning." },
     ...brandFaqs,
   ],
-  cta: { heading: "Crack the Symbiosis Entrance Test.", sub: "Secure your admission in Symbiosis' premier undergraduate programs with KATexpert." },
+  cta: { heading: "Crack the Symbiosis Entrance Test.", sub: "Secure your admission in Symbiosis' premier undergraduate programs with KatExpert." },
 };
 
 export const courses = [cat, clat, ipmat, mbaCet, mcaCet, crt, cuet, set];

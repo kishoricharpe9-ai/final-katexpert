@@ -510,119 +510,114 @@ const TOPPERS = [
 
 const TESTIMONIALS = [
   {
-    image:p9,
+    image: p9,
     name: "Rupali Kale",
     rating: 5,
-    text: "I'm incredibly grateful to KATexpert for their amazing mentorship and resources during my MCA CET prep. Their constant motivation and structural support guided me to hit a 97.7 percentile. Joining them was definitely the right choice!"
+    text: "I am incredibly grateful to KatExpert for providing the right mentorship, quality resources, and continuous motivation throughout my MCA CET preparation. Their expert guidance contributed greatly to my success in securing an impressive 97.7 percentile."
   },
   {
-    image:p11,
-    name: "Shrimant Bijwe",
+    image: p11,
+    name: "Shimant Bijwe",
     rating: 5,
-    text: "The interactive classes at KATexpert genuinely made learning enjoyable and kept me highly engaged throughout. The clear directions and strategic curriculum provided by the mentors were exactly what I needed to successfully achieve my goal."
+    text: "The interactive classes at KatExpert genuinely made learning enjoyable and kept me highly engaged throughout. Their proper direction, excellent study resources, and strategic guidance were exactly what I needed to successfully achieve my academic goal."
   },
   {
-     image:p16,
+    image: p16,
     name: "Janhavi Pawaday",
     rating: 5,
-    text: "Even though I joined KATexpert later than most students, the teachers went out of their way to help me cover the syllabus. Their structured worksheets helped me improve quickly, scoring an 88% with constant support."
+    text: "I am grateful to the teachers of KatExpert for their support. I joined later than most, but they helped me cover the syllabus. Their structured worksheets helped me improve quickly, scoring 88% with constant support."
   },
-
-
-   {
-     image:p32,
+  {
+    image: p32,
     name: "Nandini Trivedi",
     rating: 5,
-    text: "Learning from Arumita Ma'am has been a truly enriching experience. Her passion, patience, and ability to simplify complex concepts inspired me to think deeply, express creatively, and grow continuously. I will always cherish our bond, built on respect, trust, and a shared love for learning."
+    text: "Learning from Arumita Ma'am has been an enriching experience. Her passion, patience, and ability to simplify complex concepts inspired me to think deeply. I will always cherish our bond, built on respect, trust, and a love for learning."
   },
-   {
-     image:p23,
+  {
+    image: p23,
     name: "Amisha Shukla",
     rating: 5,
-    text: "Arumita Ma'am's wisdom, warmth, and kindness make every class inspiring. She teaches with patience, encourages curiosity, and helps students grow with confidence. Her guidance, belief in us, and genuine care leave a lasting impact, making her an unforgettable teacher and mentor."
+    text: "Arumita Ma'am is a beautiful blend of wisdom and grace. Every class feels like a conversation that opens our minds. She teaches from experience with patience, creating a safe space for us to explore, grow, and succeed."
   },
-   {
-     image:p25,
+  {
+    image: p25,
     name: "Atharva Panbude",
     rating: 5,
-    text: "I feel fortunate to have learned from Krish Sir. His passion, dedication, and genuine care made learning enjoyable and meaningful. Beyond academics, he taught valuable life lessons, inspired us, believed in our potential, and became the best teacher I have ever had."
+    text: "I feel incredibly lucky to have been a student of Krish Sir. His passion for teaching and genuine care is inspiring. He goes above and beyond to make learning enjoyable, while teaching us valuable life lessons."
   },
-   {
-     image:p36,
+  {
+    image: p36,
     name: "Saniya Raghunath Sondarkar",
     rating: 5,
-    text: "Krish Sir's teaching combines clarity, passion, and real-life examples, making complex concepts easy to understand. His patience, encouragement, and positivity inspire confidence, curiosity, and personal growth. Every class motivates me to aim higher, making him an exceptional teacher who leaves a lasting impression."
+    text: "Krish Sir's teaching style has had a lasting impact on me. He explains concepts with clarity, connecting lessons to real-life situations. His encouragement inspired me to aim higher and believe in myself, making learning a true joy."
   },
-   {
-     image:p28,
+  {
+    image: p28,
     name: "Kunjal Sugandh",
     rating: 5,
-    text: "Arumita Ma'am's engaging teaching, personal attention, and genuine care made learning enjoyable and inspiring. She simplified complex concepts, encouraged confidence, and supported my growth beyond academics. Her guidance, warmth, and belief in my potential have left a lasting impact on my learning journey."
+    text: "Arumita Ma'am is one of the most impactful educators in my life. Her engaging, student-centered teaching style simplifies complex concepts. Her personal attention and belief in my potential helped me gain confidence and grow in unexpected ways."
   },
-   {
-     image:p29,
+  {
+    image: p29,
     name: "Khushi Yadav",
     rating: 5,
-    text: "Krish Sir's exceptional teaching style made every concept clear and easy to understand. His guidance, care, and mentorship felt like that of an elder brother, inspiring confidence and gratitude. I feel fortunate to have learned from such an incredible teacher and mentor."
+    text: "Krish Sir is the most incredible teacher I have ever met. His unique teaching style helped us gain complete clarity on all concepts. He guides us like an elder brother and acts as an amazing personal mentor."
   },
-
-  
-   {
-     image:p30,
+  {
+    image: p30,
     name: "Maheshwari Urkude",
     rating: 5,
-    text: "I feel grateful to have learned from Krish Sir. His passion, dedication, and ability to simplify complex topics made learning inspiring and engaging. Beyond teaching, he built confidence, encouraged growth, and instilled a lifelong love for learning, leaving a lasting impact on my life."
-   },
-   {
-     image:p37,
+    text: "I feel incredibly grateful to have been taught by Krish Sir. His passion for teaching and dedication to each student's growth is truly inspiring. He simplifies complex topics, instills immense confidence, and ignites a lifelong love for learning."
+  },
+  {
+    image: p37,
     name: "Vidhi Agrawal",
     rating: 5,
-    text: "Krish Sir is more than a teacher—he is a mentor and guiding light. His kindness, patience, and passion make learning enjoyable while simplifying complex concepts. His guidance has shaped both my academic and personal growth, leaving me with lifelong lessons and unforgettable inspiration."
+    text: "Krish Sir is a mentor, motivator, and guiding light. His kindness, patience, and genuine care make learning feel exciting and safe. I have grown academically and personally under his guidance, carrying his life lessons with me always."
   },
-   {
-     image:p35,
+  {
+    image: p35,
     name: "Rudra Amol Kshirsagar",
     rating: 5,
-    text: "Even though I joined KATexpert later than most students, the teachers went out of their way to help me cover the syllabus. Their structured worksheets helped me improve quickly, scoring an 88% with constant support."
+    text: "Krish Sir's passion for teaching and his ability to explain concepts with clarity and patience make his classes stand out. He is always supportive, approachable, and motivating, ensuring every student learns and enjoys the process thoroughly."
   },
-   {
-     image:p26,
+  {
+    image: p26,
     name: "Ifra Khan",
     rating: 5,
-    text: "Even though I joined KATexpert later than most students, the teachers went out of their way to help me cover the syllabus. Their structured worksheets helped me improve quickly, scoring an 88% with constant support."
+    text: "Krish Sir's teaching methods are exceptional. He makes complex concepts easy to understand, while his friendly approach makes learning stress-free. He is not just a teacher, but a supportive mentor who guides us with genuine care."
   },
-   {
-     image:p27,
+  {
+    image: p27,
     name: "Isha Dhatrak",
     rating: 5,
-    text: "Even though I joined KATexpert later than most students, the teachers went out of their way to help me cover the syllabus. Their structured worksheets helped me improve quickly, scoring an 88% with constant support."
+    text: "Krish Sir not only imparts knowledge but also motivates us. His classes are never boring because he explains concepts clearly and makes learning enjoyable. He creates a positive classroom environment where everyone feels encouraged to learn and grow."
   },
-
-   {
-     image:p24,
+  {
+    image: p24,
     name: "Arya Dhakate",
     rating: 5,
-    text: "Even though I joined KATexpert later than most students, the teachers went out of their way to help me cover the syllabus. Their structured worksheets helped me improve quickly, scoring an 88% with constant support."
+    text: "Learning under Arumita Ma'am has been an enriching experience. Her ability to explain concepts with clarity makes complex topics manageable. She balances professionalism with approachability, always supporting us and helping us build strong confidence for the future."
   },
-   {
-     image:p33,
+  {
+    image: p33,
     name: "Pawan Chandiramani",
     rating: 5,
-    text: "Even though I joined KATexpert later than most students, the teachers went out of their way to help me cover the syllabus. Their structured worksheets helped me improve quickly, scoring an 88% with constant support."
+    text: "Learning under Krish Sir has been one of the best parts of my journey. He teaches with clarity and patience, making difficult topics simple. His personal attention, constant guidance, and genuine care make a huge difference."
   },
-   {
-     image:p34,
+  {
+    image: p34,
     name: "Rimjhim Singh",
     rating: 5,
-    text: "Even though I joined KATexpert later than most students, the teachers went out of their way to help me cover the syllabus. Their structured worksheets helped me improve quickly, scoring an 88% with constant support."
+    text: "It has been a privilege to learn under Krish Sir. His commitment to excellence and deep knowledge made a lasting impact on us. He fosters a disciplined environment encouraging critical thinking, personal growth, and academic success."
   }
 ];
 
 
 const FAQS = [
   {
-    question: "What are the benefits of joining KATexpert?",
-    answer: "Joining KATexpert provides expert faculty, a structured curriculum, personalized attention, and high-quality study materials. Students benefit from regular assessments, flexible learning options, and dedicated doubt resolution. Additionally, the competitive environment and career guidance help ensure effective preparation and success in IIM entrance exams."
+    question: "What are the benefits of joining KatExpert?",
+    answer: "Joining KatExpert provides expert faculty, a structured curriculum, personalized attention, and high-quality study materials. Students benefit from regular assessments, flexible learning options, and dedicated doubt resolution. Additionally, the competitive environment and career guidance help ensure effective preparation and success in IIM entrance exams."
   },
   {
     question: "How can I enroll in a course?",
@@ -652,27 +647,27 @@ const ADDITIONAL_HERO_SLIDES = [
   },
   {
     image: heroMca,
-    title: "MCA CET 2027 - Batches Starting from 3rd August 2026"
-  },
-  {
-    image: heroMba,
-    title: "MBA CET 2027 - Batches Starting from 3rd August 2026"
-  },
-  {
-    image: heroCat,
-    title: "CAT 2027 - Admissions Open | Start Prep Early"
-  },
-  {
-    image: heroIpmat2027,
-    title: "IPMAT 2027 - 1-Year Classroom Program | Get Into an IIM Right After Class XII"
-  },
-  {
-    image: heroIpmat2028,
     title: "IPMAT 2028 - 2-Year Classroom Program | Get Into an IIM Right After Class XII"
   },
   {
-    image: heroCatInternship,
+    image: heroMba,
+    title: "IPMAT 2027 - 1-Year Classroom Program | Get Into an IIM Right After Class XII"
+  },
+  {
+    image: heroCat,
     title: "CAT 2027 - Admissions Open | Internship Now Included"
+  },
+  {
+    image: heroIpmat2027,
+    title: "CAT 2027 - Start Your Prep Early | Admissions Open"
+  },
+  {
+    image: heroIpmat2028,
+    title: "MBA CET 2027 - Start Early, Stay Ahead | Batches Starting from 3rd August 2026"
+  },
+  {
+    image: heroCatInternship,
+    title: "MCA CET 2027 - Batches Starting from 3rd August 2026 | Start Early, Stay Ahead"
   }
 ];
 

@@ -1,12 +1,59 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import { Star, Quote, PlayCircle } from "lucide-react";
 import { TESTIMONIALS } from "@/lib/site-data";
 import { Reveal, SectionHeading } from "./section";
 
+function TestimonialText({ text, name, expanded, toggleExpand }) {
+  const [isClamped, setIsClamped] = useState(false);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const checkClamped = () => {
+      const el = textRef.current;
+      if (el) {
+        if (!expanded) {
+          setIsClamped(el.scrollHeight > el.clientHeight);
+        }
+      }
+    };
+
+    // A small timeout ensures layouts are settled before measurements
+    const t = setTimeout(checkClamped, 50);
+    window.addEventListener("resize", checkClamped);
+    return () => {
+      clearTimeout(t);
+      window.removeEventListener("resize", checkClamped);
+    };
+  }, [text, expanded]);
+
+  return (
+    <div className="mt-2.5 flex-1 flex flex-col justify-between">
+      <p
+        ref={textRef}
+        className={`text-xs leading-relaxed text-foreground/80 ${
+          expanded ? "" : "line-clamp-4"
+        }`}
+      >
+        "{text}"
+      </p>
+      
+      {(isClamped || expanded) && (
+        <button
+          onClick={() => toggleExpand(name)}
+          className="mt-2 self-start text-[10px] font-bold text-[#ea580c] hover:text-[#ea580c]/80 cursor-pointer p-0 bg-transparent border-0"
+        >
+          {expanded ? "Show Less" : "Load More"}
+        </button>
+      )}
+    </div>
+  );
+}
+
 function Testimonials() {
   const [index, setIndex] = useState(0);
+  const [expanded, setExpanded] = useState({});
   const perView = 3;
   const max = Math.max(1, TESTIMONIALS.length - perView + 1);
 
@@ -14,6 +61,13 @@ function Testimonials() {
     const t = setInterval(() => setIndex((i) => (i + 1) % max), 4000);
     return () => clearInterval(t);
   }, [max]);
+
+  const toggleExpand = (name) => {
+    setExpanded((prev) => ({
+      ...prev,
+      [name]: !prev[name],
+    }));
+  };
 
   return (
     <section id="testimonials" className="bg-secondary/40 py-16 sm:py-20">
@@ -28,7 +82,7 @@ function Testimonials() {
                 Loved by <span className="text-gradient-accent">students & parents</span>
               </>
             }
-            subtitle="Hear it straight from the people who lived the KAT Expert journey."
+            subtitle="Hear it straight from the people who lived the KatExpert journey."
           />
         </Reveal>
 
@@ -75,9 +129,12 @@ function Testimonials() {
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="mt-2.5 flex-1 text-xs leading-relaxed text-foreground/80 line-clamp-4">
-                  "{t.text || t.quote}"
-                </p>
+                <TestimonialText
+                  text={t.text || t.quote}
+                  name={t.name}
+                  expanded={!!expanded[t.name]}
+                  toggleExpand={toggleExpand}
+                />
               </article>
             ))}
           </motion.div>
@@ -107,7 +164,7 @@ function Testimonials() {
                   Watch video testimonials
                 </h3>
                 <p className="text-xs text-white/65">
-                  See our toppers share their full KAT Expert journey.
+                  See our toppers share their full KatExpert journey.
                 </p>
               </div>
             </div>

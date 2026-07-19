@@ -19,7 +19,7 @@ export default function VideoTestimonialsPage() {
   const isMobile = useIsMobile();
 
   useEffect(() => {
-    document.title = "Video Testimonials — KATexpert | Real Student Success Stories";
+    document.title = "Video Testimonials — KatExpert | Real Student Success Stories";
   }, []);
 
   function openVideo(t) {
@@ -67,7 +67,7 @@ export default function VideoTestimonialsPage() {
               <span className="text-orange">Dream Colleges</span>
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-sm text-white/80 md:text-base">
-              Real success stories from CAT, IPMAT, MBA CET, MCA CET and other KATexpert students.
+              Real success stories from CAT, IPMAT, MBA CET, MCA CET and other KatExpert students.
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5">
               <a
@@ -213,7 +213,7 @@ export default function VideoTestimonialsPage() {
               <span className="text-orange">Success Story?</span>
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-xs md:text-sm text-white/85">
-              Join thousands of successful students who achieved their dream colleges with KATexpert.
+              Join thousands of successful students who achieved their dream colleges with KatExpert.
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-2.5">
               <a

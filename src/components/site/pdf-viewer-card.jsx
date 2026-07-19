@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   ChevronLeft,
   ChevronRight,
@@ -16,6 +16,7 @@ import {
 function PdfViewerCard({ title, subtitle, pdfUrl }) {
   const [viewing, setViewing] = useState(false);
   const [zoom, setZoom] = useState(100);
+  const previewRef = useRef(null);
 
   const openPdf = () => {
     if (pdfUrl) window.open(pdfUrl, "_blank", "noopener,noreferrer");
@@ -35,31 +36,55 @@ function PdfViewerCard({ title, subtitle, pdfUrl }) {
 
   const toggleView = () => setViewing((v) => !v);
 
+  const toggleFullscreen = () => {
+    const el = previewRef.current;
+    if (el) {
+      if (!document.fullscreenElement) {
+        el.requestFullscreen().catch((err) => {
+          console.error("Error attempting to enable fullscreen:", err);
+          openPdf();
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+  };
+
   return (
     <div className="overflow-hidden rounded-lg bg-[#3a3a3a] shadow-card">
       <div className="relative aspect-[3/4] w-full">
         {viewing && pdfUrl ? (
-          <>
+          <div ref={previewRef} className="absolute inset-0 h-full w-full bg-white z-10">
             <iframe
               src={`${pdfUrl}#toolbar=0&navpanes=0`}
               title={`${title} ${subtitle}`}
               className="absolute inset-0 h-full w-full border-0 bg-white"
               style={{ transform: `scale(${zoom / 100})`, transformOrigin: "top center" }}
             />
-            <button
-              type="button"
-              onClick={toggleView}
-              className="absolute right-2 top-2 z-20 rounded-full bg-black/60 p-1.5 text-white backdrop-blur transition-colors hover:bg-black/80 cursor-pointer"
-              aria-label="Close Preview"
-            >
-              ✕
-            </button>
-          </>
+            <div className="absolute right-2 top-2 z-20 flex gap-2">
+              <button
+                type="button"
+                onClick={toggleFullscreen}
+                className="rounded-full bg-black/60 p-1.5 text-white backdrop-blur transition-colors hover:bg-black/80 cursor-pointer h-7 w-7 flex items-center justify-center border-0"
+                aria-label="Toggle Fullscreen"
+              >
+                <Maximize2 className="h-3.5 w-3.5" />
+              </button>
+              <button
+                type="button"
+                onClick={toggleView}
+                className="rounded-full bg-black/60 p-1.5 text-white backdrop-blur transition-colors hover:bg-black/80 cursor-pointer font-bold text-xs h-7 w-7 flex items-center justify-center border-0"
+                aria-label="Close Preview"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
         ) : (
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#2d2d2d] p-4">
             <div className="flex w-full max-w-[150px] flex-col items-center rounded-sm bg-white px-3 py-4.5 shadow-lg">
               <span className="text-[9px] font-bold uppercase tracking-wider text-navy">
-                KAT<span className="text-accent">expert</span>
+                KatExpert
               </span>
               <p className="mt-2 text-center font-display text-xs font-extrabold leading-tight text-navy">
                 {title}
@@ -69,7 +94,7 @@ function PdfViewerCard({ title, subtitle, pdfUrl }) {
               </p>
               <button
                 type="button"
-                onClick={toggleView}
+                onClick={openPdf}
                 className="mt-3 inline-flex items-center gap-1.5 bg-[#ea580c] hover:bg-[#d94e06] text-white text-[9px] font-bold uppercase tracking-wider px-3 py-1.5 rounded-lg transition-colors cursor-pointer"
               >
                 <FileText className="h-3 w-3" /> Preview PDF

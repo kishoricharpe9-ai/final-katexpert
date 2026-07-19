@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Mail, Briefcase, GraduationCap, User, ArrowRight } from "lucide-react";
+import { Briefcase, GraduationCap, User, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { FACULTY } from "@/lib/site-data";
 import { Reveal, SectionHeading } from "./section";
@@ -78,18 +78,6 @@ export function Faculty() {
 
                 {/* Card Footer Actions Container */}
                 <div className="mt-4 flex flex-wrap items-center justify-between gap-2 border-t border-border pt-3">
-                  <div className="flex gap-1">
-                    {[Linkedin, Twitter, Mail].map((Icon, idx) => (
-                      <a
-                        key={idx}
-                        href="#contact"
-                        aria-label="Social Link Connection"
-                        className="grid h-7 w-7 place-items-center rounded-md border border-border text-foreground/60 transition-all hover:border-accent hover:bg-accent/5 hover:text-accent"
-                      >
-                        <Icon className="h-3 w-3" />
-                      </a>
-                    ))}
-                  </div>
                   <Link
                     to={`/about?tab=Faculty#${f.slug}`}
                     className="inline-flex items-center justify-center gap-1 px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider rounded-lg bg-accent text-white shadow-sm hover:bg-accent/90 active:scale-95 transition-all group/btn ml-auto cursor-pointer"

@@ -21,7 +21,7 @@ export default function VisualGalleryPage() {
       w: f.w,
       h: f.h,
       category: f.category,
-      alt: `${f.category} — KAT Experts`,
+      alt: `${f.category} — KatExpert`,
     }));
   }, [filteredItems]);
 

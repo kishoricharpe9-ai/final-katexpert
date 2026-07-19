@@ -106,7 +106,7 @@ export function ContactAndFaq() {
                         <option key={c.id} value={c.title}>{c.title}</option>
                       )) || (
                         <>
-                          <option value="kat-expert">KAT Expert Program</option>
+                          <option value="kat-expert">KatExpert Program</option>
                           <option value="mock-series">Mock Analysis Series</option>
                         </>
                       )}

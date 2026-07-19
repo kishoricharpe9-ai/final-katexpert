@@ -37,7 +37,7 @@ export function Lightbox({ images, index, onClose, onIndexChange }) {
   const share = async () => {
     try {
       if (navigator.share) {
-        await navigator.share({ url: img.full, title: "KAT Experts Gallery" });
+        await navigator.share({ url: img.full, title: "KatExpert Gallery" });
       } else {
         await navigator.clipboard.writeText(img.full);
       }

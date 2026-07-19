@@ -44,7 +44,7 @@ const VIDEO_TESTIMONIALS = [
     exam: "CAT",
     college: "IIM Ahmedabad",
     score: "99.8%ile",
-    quote: "KATexpert gave me the structure I needed to convert my CAT dream into reality.",
+    quote: "KatExpert gave me the structure I needed to convert my CAT dream into reality.",
     title: "Hear It From Our Achievers"
   },
   {
@@ -55,7 +55,7 @@ const VIDEO_TESTIMONIALS = [
     college: "IIM Indore",
     score: "AIR 12",
     quote: "The mentorship here is unmatched — every doubt cleared, every step guided.",
-    title: "Why Students Trust KATexpert"
+    title: "Why Students Trust KatExpert"
   },
   {
     id: "arpit",
@@ -64,7 +64,7 @@ const VIDEO_TESTIMONIALS = [
     exam: "MBA CET",
     college: "JBIMS Mumbai",
     score: "99.94%ile",
-    quote: "From average scores to a top JBIMS seat — the KATexpert grind changed everything.",
+    quote: "From average scores to a top JBIMS seat — the KatExpert grind changed everything.",
     title: "Arpit's CET Success Story"
   },
   {
@@ -84,7 +84,7 @@ const VIDEO_TESTIMONIALS = [
     exam: "MBA CET",
     college: "SIMSREE Mumbai",
     score: "99.87%ile",
-    quote: "Consistent mocks and honest feedback — that's the KATexpert formula.",
+    quote: "Consistent mocks and honest feedback — that's the KatExpert formula.",
     title: "Atharv's CET Success Story"
   },
   {
@@ -95,7 +95,7 @@ const VIDEO_TESTIMONIALS = [
     college: "IIM Lucknow",
     score: "99.5%ile",
     quote: "It stopped feeling like coaching and started feeling like a second home.",
-    title: "Why Students Love KATexpert"
+    title: "Why Students Love KatExpert"
   },
   {
     id: "rupali",
@@ -124,7 +124,7 @@ const VIDEO_TESTIMONIALS = [
     exam: "CRT",
     college: "TCS Digital",
     score: "Placed",
-    quote: "Cracked my first campus interview thanks to KATexpert's CRT program.",
+    quote: "Cracked my first campus interview thanks to KatExpert's CRT program.",
     title: "Success Starts with the Right Guidance"
   },
   {
@@ -183,11 +183,11 @@ const NEWS_EVENTS = [
   {
     id: 1,
     type: "News",
-    title: "Sigmas Clinch KATexpert Box Cricket League Trophy",
+    title: "Sigmas Clinch KatExpert Box Cricket League Trophy",
     date: "Published July 12, 2026",
     time: "9:00 AM - 5:00 PM",
     venue: "Wings Turf, Bishop School, Civil Lines",
-    desc: "Four teams competed fiercely in the annual KATexpert Box Cricket League. In a thrilling final, the 'Sigmas' captained by Hiten Khatod defeated the 'Vibers' by 8 runs, scoring 63 runs in 8 overs and defending it by restricting the opponents to 55 runs. Individual accolades went to Aniket Matte & Shravani Raut (Best Bowlers) and Vishal Sakharwade & Sanjana Manekar (Best Batsmen). The event was graced by directors Dr. Arumita Pawa, Krish Vyas, along with Manoj Pawa and Amit Gandhare.",
+    desc: "Four teams competed fiercely in the annual KatExpert Box Cricket League. In a thrilling final, the 'Sigmas' captained by Hiten Khatod defeated the 'Vibers' by 8 runs, scoring 63 runs in 8 overs and defending it by restricting the opponents to 55 runs. Individual accolades went to Aniket Matte & Shravani Raut (Best Bowlers) and Vishal Sakharwade & Sanjana Manekar (Best Batsmen). The event was graced by directors Dr. Arumita Pawa, Krish Vyas, along with Manoj Pawa and Amit Gandhare.",
     images: [newsCricket1, newsCricket2]
   },
   {
@@ -196,8 +196,8 @@ const NEWS_EVENTS = [
     title: "Detox Your Mind",
     date: "Mental Wellness",
     time: "Mindfulness Session",
-    venue: "KATexpert Nagpur Classroom",
-    desc: "KATexpert organized an enriching session titled \"Detox Your Mind\" led by Ms. Tina Chachra, Founder and Healer. The session focused on mental wellness, stress management, and maintaining a positive mindset during competitive exam preparation.\n\nThrough interactive guidance and simple mindfulness techniques, students learned practical ways to improve focus and emotional balance. The session served as a refreshing and rejuvenating experience for all participants.",
+    venue: "KatExpert Nagpur Classroom",
+    desc: "KatExpert organized an enriching session titled \"Detox Your Mind\" led by Ms. Tina Chachra, Founder and Healer. The session focused on mental wellness, stress management, and maintaining a positive mindset during competitive exam preparation.\n\nThrough interactive guidance and simple mindfulness techniques, students learned practical ways to improve focus and emotional balance. The session served as a refreshing and rejuvenating experience for all participants.",
     rightImage: "/assets/gallery/2026/05/5.jpeg"
   },
   {
@@ -206,8 +206,8 @@ const NEWS_EVENTS = [
     title: "LinkedIn Made Easy",
     date: "Personal Branding",
     time: "Career Session",
-    venue: "KATexpert Nagpur Classroom",
-    desc: "KATexpert conducted an engaging session titled \"LinkedIn Made Easy\" by Ms. Bhavya Magnani, Social Media Manager and Personal Branding Strategist. The session focused on building a strong LinkedIn profile, personal branding, and effective networking strategies.\n\nStudents gained practical insights on enhancing their professional presence online, making the session both informative and career-oriented.",
+    venue: "KatExpert Nagpur Classroom",
+    desc: "KatExpert conducted an engaging session titled \"LinkedIn Made Easy\" by Ms. Bhavya Magnani, Social Media Manager and Personal Branding Strategist. The session focused on building a strong LinkedIn profile, personal branding, and effective networking strategies.\n\nStudents gained practical insights on enhancing their professional presence online, making the session both informative and career-oriented.",
     rightImage: "/assets/gallery/2026/05/14.jpeg"
   },
   {
@@ -216,7 +216,7 @@ const NEWS_EVENTS = [
     title: "Exploring BBA / MBA World : Their Way",
     date: "Alumni Interaction",
     time: "Success Session",
-    venue: "KATexpert Nagpur Classroom",
+    venue: "KatExpert Nagpur Classroom",
     desc: "Mozzammil Khalil (MMS from JBIMS, 2023 Batch; CAT 2021: 99.49%ile, MAH-CET 2021: 99.94%ile) shared insights on CAT and MAH-CET preparation, his MMS journey, and the transition to the corporate world. The interactive session was highly informative and motivating for MBA aspirants.",
     rightImage: "/assets/gallery/2026/05/12.jpeg"
   },
@@ -227,7 +227,7 @@ const NEWS_EVENTS = [
     date: "Sports Day",
     time: "Box Cricket Tournament",
     venue: "Wings Turf, Bishop School, Civil Lines",
-    desc: "KATexpert organized TURFAMENT, a fun-filled cricket tournament for students. Divided into teams, participants showcased teamwork, sportsmanship, and competitive spirit in exciting matches. The event aimed to build camaraderie and offer a refreshing stress-buster amid exam preparations.\n\nIt concluded with medals and trophies for the winners and snack boxes for everyone, making it a memorable blend of cricket and CAT camaraderie. The event was graced by Mr. Amit Gandhare and the Directors of KATexpert Dr Arumita Pawa and Krish Vyas.",
+    desc: "KatExpert organized TURFAMENT, a fun-filled cricket tournament for students. Divided into teams, participants showcased teamwork, sportsmanship, and competitive spirit in exciting matches. The event aimed to build camaraderie and offer a refreshing stress-buster amid exam preparations.\n\nIt concluded with medals and trophies for the winners and snack boxes for everyone, making it a memorable blend of cricket and CAT camaraderie. The event was graced by Mr. Amit Gandhare and the Directors of KATexpert Dr Arumita Pawa and Krish Vyas.",
     rightImage: "/assets/gallery/2026/05/4.jpeg"
   },
   {
@@ -237,7 +237,7 @@ const NEWS_EVENTS = [
     date: "Box Cricket League",
     time: "Champions Trophy",
     venue: "Wings Turf, Bishop School, Civil Lines",
-    desc: "SIGMAS defeated Vibers to clinch the KATexpert Champions trophy. The Box Cricket League was organised by KATexpert of Khare Town, Dharampeth, at Wings Turf, Bishop School, Civil Lines. Four teams competed against each other to reach the finals. In the final, Sigmas defeated Vibers by eight runs to claim the title. Sigmas posted 63 runs in 8 overs and restricted their opponents to 55 runs. Around 100 students participated in the event with full enthusiasm and excitement. It also gave them an opportunity to network with other students and show their leadership skills and sportsmanship. The event was graced by Manoj Pawa, Amit Gandhare and the Directors of KATexpert Dr Arumita Pawa and Krish Vyas.",
+    desc: "SIGMAS defeated Vibers to clinch the KatExpert Champions trophy. The Box Cricket League was organised by KatExpert of Khare Town, Dharampeth, at Wings Turf, Bishop School, Civil Lines. Four teams competed against each other to reach the finals. In the final, Sigmas defeated Vibers by eight runs to claim the title. Sigmas posted 63 runs in 8 overs and restricted their opponents to 55 runs. Around 100 students participated in the event with full enthusiasm and excitement. It also gave them an opportunity to network with other students and show their leadership skills and sportsmanship. The event was graced by Manoj Pawa, Amit Gandhare and the Directors of KATexpert Dr Arumita Pawa and Krish Vyas.",
     rightImage: "/assets/gallery/2026/05/3.jpeg"
   }
 ];
@@ -320,7 +320,7 @@ export default function AboutPage() {
       w: f.w,
       h: f.h,
       category: f.category,
-      alt: `${f.category} — KAT Experts`,
+      alt: `${f.category} — KatExpert`,
     }));
   }, [filteredPhotos]);
 
@@ -503,7 +503,7 @@ export default function AboutPage() {
                     Our Story & Philosophy
                   </span>
                   <h1 className="text-3xl sm:text-4xl font-display font-extrabold text-brand-blue tracking-tight mb-3">
-                    About <span className="bg-gradient-to-r from-brand-orange to-[#f97316] bg-clip-text text-transparent">KATexpert</span>
+                    About <span className="bg-gradient-to-r from-brand-orange to-[#f97316] bg-clip-text text-transparent">KatExpert</span>
                   </h1>
                   <p className="text-base sm:text-lg text-gray-600 font-medium italic">
                     "A Place to Learn, A Place to Grow"
@@ -511,7 +511,7 @@ export default function AboutPage() {
                   <div className="w-16 h-1 bg-[#ea580c] rounded-full mx-auto mt-4 shadow-sm" />
                 </div>
 
-                {/* About KATexpert Grid */}
+                {/* About KatExpert Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-12 text-left" id="about-main-section">
                   {/* Left Column: Image with premium styling */}
                   <div className="lg:col-span-5 flex justify-center lg:justify-start">
@@ -522,7 +522,7 @@ export default function AboutPage() {
                         <div className="relative aspect-square overflow-hidden rounded-2xl bg-slate-50 border border-slate-100">
                           <img
                             src={p6}
-                            alt="Graduate Student - KATexpert Nagpur"
+                            alt="Graduate Student - KatExpert Nagpur"
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-103"
                           />
                           <div className="absolute top-3 left-3 bg-brand-blue/90 backdrop-blur-md text-white text-[9px] font-bold px-3 py-1 rounded-full shadow-md">
@@ -539,7 +539,7 @@ export default function AboutPage() {
                       Empowering Minds, Shaping Futures
                     </h2>
                     <p className="text-slate-600 leading-relaxed text-xs sm:text-sm">
-                      <strong className="text-brand-blue">KATexpert</strong> is a premier educational institute dedicated to empowering students with the knowledge and strategies needed to excel in competitive exams. With a strong focus on personalized learning and result-driven coaching, we specialize in preparing aspirants for:
+                      <strong className="text-brand-blue">KatExpert</strong> is a premier educational institute dedicated to empowering students with the knowledge and strategies needed to excel in competitive exams. With a strong focus on personalized learning and result-driven coaching, we specialize in preparing aspirants for:
                     </p>
 
                     {/* Dynamic Badges / Grid of courses */}
@@ -586,7 +586,7 @@ export default function AboutPage() {
                       <Quote className="w-6 h-6 text-brand-orange" />
                     </div>
                     <p className="text-xs sm:text-sm font-medium leading-relaxed text-slate-200 italic">
-                      "At KATexpert, we combine experienced faculty, comprehensive study material, and regular mock tests to ensure our students are fully prepared to achieve their academic and career goals. Whether you’re aiming for top business schools or technical institutions, our expert guidance paves the way to success."
+                      "At KatExpert, we combine experienced faculty, comprehensive study material, and regular mock tests to ensure our students are fully prepared to achieve their academic and career goals. Whether you’re aiming for top business schools or technical institutions, our expert guidance paves the way to success."
                     </p>
                   </div>
                 </div>
@@ -783,7 +783,7 @@ export default function AboutPage() {
                     Gallery
                   </span>
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-brand-blue tracking-tight mb-3">
-                    Life at KATexpert in <span className="text-brand-orange">Frames</span>
+                    Life at KatExpert in <span className="text-brand-orange">Frames</span>
                   </h2>
                   <p className="text-xs sm:text-sm text-gray-500 leading-relaxed font-medium">
                     A glimpse into our classrooms, victory celebrations, mock bootcamp sessions, and interactive workshops.
@@ -1023,7 +1023,7 @@ export default function AboutPage() {
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="KATexpert Dharampeth Campus Map"
+                        title="KatExpert Dharampeth Campus Map"
                       ></iframe>
                     </div>
                   </div>

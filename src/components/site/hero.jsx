@@ -24,7 +24,7 @@ const slides = [
   },
   {
     image: hero2,
-    title: "Crack CAT, CLAT & IPMAT",
+    title: "Crack CAT,CLAT ,MBA CET,MCA CET, CRT & IPMAT",
   },
   ...ADDITIONAL_HERO_SLIDES
 ];
@@ -99,9 +99,9 @@ export function Hero() {
 
           {/* Heading */}
           <h1 className="mt-4 font-display text-3xl font-extrabold leading-[1.1] text-navy sm:text-4xl lg:text-5xl">
-            Your <span className="text-gradient-accent">Rank Story</span>
+            The story of <span className="text-gradient-accent">your success</span>
             <br />
-            Starts Today
+            starts now
           </h1>
 
           {/* Description */}

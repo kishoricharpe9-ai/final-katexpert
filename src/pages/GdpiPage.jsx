@@ -1,70 +1,70 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { PageHero } from "@/components/site/page-hero";
-import { Download, FileText, Phone, Mail, MapPin, MessageCircle, GraduationCap, Users, Target, BookOpen } from "lucide-react";
+import { Download, FileText, Phone, Mail, MapPin, MessageCircle, GraduationCap, Users, Target, BookOpen, Maximize2 } from "lucide-react";
 
 const GDPI_RESOURCES = [
   {
-    title: "KATexpert GD/PI Prep",
+    title: "KatExpert GD/PI Prep",
     description: "Core preparation notes covering the fundamentals of Group Discussion and Personal Interview rounds.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-prep.docx_compressed-1.pdf",
     category: "Foundation",
   },
   {
-    title: "KATexpert GD/PI Prep — 10/12",
+    title: "KatExpert GD/PI Prep — 10/12",
     description: "Structured preparation guide with topics, frameworks and examples for the 10th December session.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-prep-10_12.docx_compressed-1-1.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KATexpert GD/PI — 11/12",
+    title: "KatExpert GD/PI — 11/12",
     description: "Session material with current-affairs GD topics and interview pointers.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-11_12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KATexpert GD/PI — 13/12",
+    title: "KatExpert GD/PI — 13/12",
     description: "GD prompts, key arguments and PI questions curated for the 13th December class.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-13_12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KATexpert GD/PI — 14/12",
+    title: "KatExpert GD/PI — 14/12",
     description: "Discussion themes and PI practice questions for the 14th December session.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-14_12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KATexpert GD/PI — 19/12",
+    title: "KatExpert GD/PI — 19/12",
     description: "Weekly compilation of GD topics with structured points for and against.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-19-12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KATexpert GD/PI — 27/12",
+    title: "KatExpert GD/PI — 27/12",
     description: "Fresh set of GD topics and interview scenarios for the 27th December class.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-27-12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KATexpert GD/PI — 29/12",
+    title: "KatExpert GD/PI — 29/12",
     description: "Practice pack with GD case topics and personal interview response frameworks.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-29-12.docx_compressed-1.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KATexpert GD/PI — 31/12",
+    title: "KatExpert GD/PI — 31/12",
     description: "Year-end wrap-up compilation with major GD themes and PI questions.",
     url: "https://katexperts.com/wp-content/uploads/2026/01/KATexpert-GD-PI-31-12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KATexpert GD/PI — 3/1",
+    title: "KatExpert GD/PI — 3/1",
     description: "New year kick-off session material with current GD topics.",
     url: "https://katexperts.com/wp-content/uploads/2026/01/KATexpert-GD-PI-3-1.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KATexpert GD/PI — 4/1",
+    title: "KatExpert GD/PI — 4/1",
     description: "Follow-up session pack with additional GD topics and interview prompts.",
     url: "https://katexperts.com/wp-content/uploads/2026/01/KATexpert-GD-PI-4-1.docx_compressed.pdf",
     category: "Daily Notes",
@@ -91,6 +91,34 @@ const GDPI_RESOURCES = [
 
 export default function GdpiPage() {
   const [selectedPreview, setSelectedPreview] = useState(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const iframeContainerRef = useRef(null);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(document.fullscreenElement === iframeContainerRef.current);
+    };
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    return () => {
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+    };
+  }, []);
+
+  const toggleFullscreen = () => {
+    const el = iframeContainerRef.current;
+    if (el) {
+      if (!document.fullscreenElement) {
+        el.requestFullscreen().catch((err) => {
+          console.error("Error attempting to enable fullscreen:", err);
+          if (selectedPreview) {
+            window.open(selectedPreview.url, "_blank", "noopener,noreferrer");
+          }
+        });
+      } else {
+        document.exitFullscreen();
+      }
+    }
+  };
 
   const grouped = useMemo(() => {
     return GDPI_RESOURCES.reduce((acc, r) => {
@@ -115,7 +143,7 @@ export default function GdpiPage() {
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Once written exam shortlists are out, the Group Discussion and Personal Interview
-              rounds decide who converts a call into an admit. At KAT Experts, our GD/PI programme
+              rounds decide who converts a call into an admit. At KatExpert, our GD/PI programme
               is designed to give you structured practice, current-affairs awareness, and confident
               communication — the three pillars that panels look for.
             </p>
@@ -154,7 +182,7 @@ export default function GdpiPage() {
               GD/PI Study Material
             </h2>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-              Every session PDF, interview question bank and post-CAT guide from the KAT Experts
+              Every session PDF, interview question bank and post-CAT guide from the KatExpert
               GD/PI programme — all in one place, ready to download.
             </p>
           </div>
@@ -230,7 +258,7 @@ export default function GdpiPage() {
             {[
               { n: 1, title: "Understand the format", body: "Learn how B-Schools structure their GD, WAT and PI rounds and what each panel evaluates." },
               { n: 2, title: "Practice with the daily PDFs", body: "Use the session notes above to revise arguments, frameworks and interview categories every day." },
-              { n: 3, title: "Join live mock panels", body: "Face rotating panels with KAT Experts mentors and get structured, actionable feedback." },
+              { n: 3, title: "Join live mock panels", body: "Face rotating panels with KatExpert mentors and get structured, actionable feedback." },
               { n: 4, title: "Refine your profile story", body: "Nail the ‘tell me about yourself’ answer and align your narrative with each B-School’s culture." },
             ].map((s) => (
               <li
@@ -264,14 +292,29 @@ export default function GdpiPage() {
                 ✕
               </button>
             </div>
-            <div className="flex-1 rounded-xl bg-slate-100 overflow-hidden relative">
+            <div ref={iframeContainerRef} className="flex-1 rounded-xl bg-slate-100 overflow-hidden relative">
               <iframe
                 src={`${selectedPreview.url}#toolbar=0&navpanes=0`}
                 title={selectedPreview.title}
                 className="absolute inset-0 w-full h-full border-0 bg-white"
               />
+              {isFullscreen && (
+                <button
+                  type="button"
+                  onClick={toggleFullscreen}
+                  className="absolute right-4 top-4 z-50 rounded-full bg-black/60 p-2 text-white backdrop-blur transition-colors hover:bg-black/80 cursor-pointer font-bold text-xs"
+                >
+                  ✕
+                </button>
+              )}
             </div>
             <div className="flex justify-end gap-3 pt-3 border-t border-slate-100 mt-3">
+              <button
+                onClick={toggleFullscreen}
+                className="inline-flex items-center gap-1.5 border border-[#ea580c] bg-transparent hover:bg-[#ea580c]/5 text-[#ea580c] text-[11px] font-bold uppercase tracking-wider px-4 py-2 rounded transition-colors cursor-pointer"
+              >
+                <Maximize2 className="h-3.5 w-3.5" /> Full Screen
+              </button>
               <a
                 href={selectedPreview.url}
                 target="_blank"

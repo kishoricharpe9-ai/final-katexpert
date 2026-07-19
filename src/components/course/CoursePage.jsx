@@ -157,7 +157,7 @@ function About({ c }) {
     <section className="py-10 sm:py-12">
       <div className="container-x max-w-5xl mx-auto px-4 sm:px-8 grid gap-8 lg:grid-cols-[1fr_1.4fr] items-start">
         <div className="lg:sticky lg:top-24">
-          <SectionHeading eyebrow="About the Course" title={`Why ${c.code} at KATexpert?`} />
+          <SectionHeading eyebrow="About the Course" title={`Why ${c.code} at KatExpert?`} />
         </div>
         <div className="prose max-w-none text-xs sm:text-sm text-navy-soft leading-relaxed">
           <p>{c.description}</p>
@@ -172,7 +172,7 @@ function WhyChoose({ c }) {
     <section className="py-10 sm:py-12 bg-navy text-white relative overflow-hidden">
       <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-[#ea580c]/20 blur-3xl" aria-hidden />
       <div className="container-x max-w-5xl mx-auto px-4 sm:px-8 relative">
-        <SectionHeading eyebrow="Why Choose This Course" title={`The KATexpert ${c.code} Advantage`} invert
+        <SectionHeading eyebrow="Why Choose This Course" title={`The KatExpert ${c.code} Advantage`} invert
           sub={`Only the features and strengths that apply to the ${c.code} program.`} />
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {c.whyChoose.map((f, i) => (
