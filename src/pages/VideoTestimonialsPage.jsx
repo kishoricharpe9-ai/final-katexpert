@@ -41,7 +41,7 @@ export default function VideoTestimonialsPage() {
   const related = active ? gridItems.filter((x) => x.id !== active.id).slice(0, 4) : [];
 
   return (
-    <div className="min-h-screen bg-background pt-16">
+    <div className="min-h-screen bg-background pt-16 mt-6">
       {/* HERO */}
       <section className="relative overflow-hidden bg-hero-gradient text-white pt-10 pb-16 md:pt-12 md:pb-22">
         <div
@@ -90,13 +90,13 @@ export default function VideoTestimonialsPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.1, duration: 0.3 }}
             className="mx-auto mt-10 grid max-w-3xl grid-cols-2 gap-3 md:grid-cols-4"
           >
             {[
               { icon: Users, label: "Students Trained", value: 5000, suffix: "+" },
               { icon: GraduationCap, label: "Years of Experience", value: 18, suffix: "+" },
-              { icon: Star, label: "Student Satisfaction", value: 4.9, suffix: "★" },
+              { icon: Star, label: "Student Satisfaction", value: 5, suffix: "★" },
               { icon: Trophy, label: "Success Stories", value: 500, suffix: "+" },
             ].map((s) => (
               <div key={s.label} className="rounded-xl border border-white/15 bg-white/5 p-3 text-center backdrop-blur">

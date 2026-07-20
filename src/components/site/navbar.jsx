@@ -40,7 +40,7 @@ function DesktopDropdown({ item, scrolled }) {
   const [open, setOpen] = useState(false);
   const [pyqsOpen, setPyqsOpen] = useState(false);
 
-  const triggerClass = `inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
+  const triggerClass = `inline-flex items-center gap-[1px] rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
     scrolled
       ? "text-foreground/80 hover:bg-secondary hover:text-foreground"
       : "text-white/85 hover:bg-white/10 hover:text-white"
@@ -144,7 +144,7 @@ function CoursesDropdown({ scrolled }) {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
-  const triggerClass = `inline-flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
+  const triggerClass = `inline-flex items-center gap-[1px] rounded-full px-3.5 py-2 text-sm font-medium transition-colors ${
     scrolled
       ? "text-foreground/80 hover:bg-secondary hover:text-foreground"
       : "text-white/85 hover:bg-white/10 hover:text-white"
@@ -500,6 +500,14 @@ function Navbar() {
             <Button asChild variant="accent" size="sm">
               <a href="/#contact">Book Free Counselling</a>
             </Button>
+
+            <Button
+              asChild
+              variant="accent"
+              size="sm"
+            >
+              <a href="https://mock.katexperts.com/login">Login</a>
+            </Button>
           </div>
 
           <button
@@ -539,6 +547,12 @@ function Navbar() {
                 <Button asChild variant="accent" className="mt-2 w-full">
                   <a href="/#contact" onClick={closeMobile}>
                     Book Free Counselling
+                  </a>
+                </Button>
+
+                <Button asChild variant="accent" className="mt-2 w-full">
+                  <a href="https://mock.katexperts.com/login" onClick={closeMobile}>
+                    Login
                   </a>
                 </Button>
               </ul>

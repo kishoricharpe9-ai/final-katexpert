@@ -119,6 +119,7 @@ function Hero({ c }) {
               alt={`${c.code} — ${c.name}`}
               className={c.slug === "mba-cet" ? "w-full h-auto rounded-xl" : "w-full aspect-[16/10] rounded-xl object-cover max-h-72"}
               loading="eager"
+              fetchPriority="high"
             />
             <div className="absolute -bottom-4 -left-4 rounded-xl bg-white text-navy shadow-soft px-4 py-3 hidden sm:block">
               <p className="font-display font-bold text-sm leading-tight">Trusted by 5,000+<br/>students</p>

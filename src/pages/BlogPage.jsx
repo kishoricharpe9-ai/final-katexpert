@@ -224,6 +224,8 @@ export default function BlogPage() {
                         src={featuredPost.img} 
                         alt={featuredPost.title} 
                         className="w-full h-full object-contain"
+                        loading="eager"
+                        fetchPriority="high"
                       />
                     </div>
                   )}

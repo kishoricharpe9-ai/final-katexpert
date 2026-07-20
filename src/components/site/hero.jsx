@@ -142,6 +142,8 @@ export function Hero() {
                 key={index}
                 src={slide.image}
                 alt=""
+                loading={index < 2 ? "eager" : "lazy"}
+                fetchPriority={index === 0 ? "high" : "auto"}
                 className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-1000 ${
                   current === index ? "opacity-100" : "opacity-0"
                 }`}
@@ -190,7 +192,7 @@ export function Hero() {
          
           <div className="hidden lg:block">
             <FloatingCard
-              className="absolute -right-4 -top-4"
+              className="absolute -right-25 -top-4"
               delay={0.2}
               icon={<Trophy className="h-4 w-4 text-accent" />}
               title="AIR 1 -  100%ile  — MBA CET"
@@ -198,7 +200,7 @@ export function Hero() {
             />
 
             <FloatingCard
-              className="absolute -left-12 top-2/3"
+              className="absolute -left-32 top-2/3"
               delay={0.4}
               icon={<Star className="h-4 w-4 text-accent" />}
               title="99.35 %ile MBA CET"

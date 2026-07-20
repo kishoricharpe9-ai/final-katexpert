@@ -37,7 +37,7 @@ function Footer() {
           <div className="mt-4 flex gap-1.5">
             {[
               { Icon: Facebook, url: "https://www.facebook.com/katexpertinstitute/" },
-              { Icon: Instagram, url: "https://www.instagram.com/katexpert_nagpur/" },
+              { Icon: Instagram, url: "https://www.instagram.com/katexpert_nagpur?igsh=b2U3N2w2bzVnc2g4" },
               { Icon: Youtube, url: "https://www.youtube.com/channel/UCxc-E0Jkn7EUBlCg7I9WXrw" },
               { Icon: Linkedin, url: "https://www.linkedin.com/company/katexpertnagpur/" }
             ].map(({ Icon, url }, i) => (

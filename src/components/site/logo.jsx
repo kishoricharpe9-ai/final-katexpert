@@ -9,6 +9,8 @@ export function Logo({ light = false }) {
           src={logoImg} 
           alt="KatExpert Logo" 
           className="h-8 w-auto object-contain md:h-9"
+          loading="eager"
+          fetchPriority="high"
         />
       </div>
     </Link>
