@@ -84,7 +84,7 @@ function PdfViewerCard({ title, subtitle, pdfUrl }) {
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#2d2d2d] p-4">
             <div className="flex w-full max-w-[150px] flex-col items-center rounded-sm bg-white px-3 py-4.5 shadow-lg">
               <span className="text-[9px] font-bold uppercase tracking-wider text-navy">
-                KatExpert
+                KATexpert
               </span>
               <p className="mt-2 text-center font-display text-xs font-extrabold leading-tight text-navy">
                 {title}

@@ -16,7 +16,7 @@ const DOSSIERS = {
         "<strong>Doctorate in Cognitive Linguistics</strong> from a premier research university.",
         "<strong>20+ Years</strong> of core pedagogical design and high-level classroom instruction.",
         "Created the <strong>Cognitive Behavioral Reading System (CBRS)</strong> for competitive reading.",
-        "Chief designer of KatExpert's elite Verbal curriculum."
+        "Chief designer of KATexpert's elite Verbal curriculum."
       ]
     },
     philosophy: {

@@ -9,7 +9,7 @@ export const testimonials = [
     score: "",
     duration: "0:45",
     title: "Hear It From Our Achievers",
-    quote: "KatExpert gave me the structure I needed to convert my CAT dream into reality.",
+    quote: "KATexpert gave me the structure I needed to convert my CAT dream into reality.",
   },
   {
     id: "vanshita",
@@ -20,7 +20,7 @@ export const testimonials = [
     college: "",
     score: "",
     duration: "0:52",
-    title: "Why Students Trust KatExpert",
+    title: "Why Students Trust KATexpert",
     quote: "The mentorship here is unmatched — every doubt cleared, every step guided.",
   },
   {
@@ -33,7 +33,7 @@ export const testimonials = [
     score: "",
     duration: "1:02",
     title: "Arpit's CET Success Story",
-    quote: "From average scores to a top JBIMS seat — the KatExpert grind changed everything.",
+    quote: "From average scores to a top JBIMS seat — the KATexpert grind changed everything.",
   },
   {
     id: "jay",
@@ -57,7 +57,7 @@ export const testimonials = [
     score: "",
     duration: "0:55",
     title: "Atharv's CET Success Story",
-    quote: "Consistent mocks and honest feedback — that's the KatExpert formula.",
+    quote: "Consistent mocks and honest feedback — that's the KATexpert formula.",
   },
   {
     id: "darshan",
@@ -68,7 +68,7 @@ export const testimonials = [
     college: "",
     score: "",
     duration: "0:40",
-    title: "Why Students Love KatExpert",
+    title: "Why Students Love KATexpert",
     quote: "It stopped feeling like coaching and started feeling like a second home.",
   },
   {
@@ -105,7 +105,7 @@ export const testimonials = [
     score: "",
     duration: "0:47",
     title: "Success Starts with the Right Guidance",
-    quote: "Cracked my first campus interview thanks to KatExpert's CRT program.",
+    quote: "Cracked my first campus interview thanks to KATexpert's CRT program.",
   },
   {
     id: "kasak",

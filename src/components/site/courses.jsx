@@ -83,7 +83,7 @@ export function Courses() {
           <AnimatePresence mode="popLayout">
             {filteredCourses.map((course, i) => {
               const IconComponent = getCourseIcon(course.slug);
-              const isFeatured = course.slug === "cat" || course.slug === "mba-cet";
+              const isFeatured = false;
               
               const durationMap = {
                 cat: "12 Months",

@@ -5,7 +5,7 @@ import { PdfViewerCard } from "@/components/site/pdf-viewer-card";
 const CAT_PAPERS = [
   { year: 2025, slot: 1, url: "https://katexperts.com/wp-content/uploads/2026/06/CAT-2025-Slot-1-Question-Paper-by-KATexpert.pdf.pdf" },
   { year: 2025, slot: 2, url: "https://katexperts.com/wp-content/uploads/2026/06/CAT-2025-Slot-2-Question-Paper-by-KATexpert.pdf.pdf" },
-  { year: 2025, slot: 3, url: "https://katexperts.com/wp-content/uploads/2026/06/CAT-2025-Slot-3-Question-Paper-by-KatExpert.pdf.pdf" },
+  { year: 2025, slot: 3, url: "https://katexperts.com/wp-content/uploads/2026/06/CAT-2025-Slot-3-Question-Paper-by-KATexpert.pdf.pdf" },
   { year: 2024, slot: 1, url: "https://katexperts.com/wp-content/uploads/2026/06/CAT-2024-Slot-1-Question-Paper-by-KATexpert.pdf.pdf" },
   { year: 2024, slot: 2, url: "https://katexperts.com/wp-content/uploads/2026/06/CAT-2024-Slot-2-Question-Paper-by-KATexpert.pdf" },
   { year: 2024, slot: 3, url: "https://katexperts.com/wp-content/uploads/2026/06/CAT-2024-Slot-3-Question-Paper-by-KATexpert.pdf" },

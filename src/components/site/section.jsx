@@ -24,7 +24,7 @@ export function SectionHeading({
   return (
     <div className={align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}>
       {eyebrow && (
-        <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent">
+        <span className="inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-bold tracking-wider text-accent">
           {eyebrow}
         </span>
       )}

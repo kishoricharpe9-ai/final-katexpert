@@ -7,7 +7,7 @@ export function Logo({ light = false }) {
       <div className="bg-white px-3.5 py-1.5 rounded-xl flex items-center justify-center shadow-sm">
         <img 
           src={logoImg} 
-          alt="KatExpert Logo" 
+          alt="KATexpert Logo" 
           className="h-8 w-auto object-contain md:h-9"
           loading="eager"
           fetchPriority="high"

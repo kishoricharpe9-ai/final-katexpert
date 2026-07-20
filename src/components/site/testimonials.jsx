@@ -82,7 +82,7 @@ function Testimonials() {
                 Loved by <span className="text-gradient-accent">students & parents</span>
               </>
             }
-            subtitle="Hear it straight from the people who lived the KatExpert journey."
+            subtitle="Hear it straight from the people who lived the KATexpert journey."
           />
         </Reveal>
 
@@ -164,7 +164,7 @@ function Testimonials() {
                   Watch video testimonials
                 </h3>
                 <p className="text-xs text-white/65">
-                  See our toppers share their full KatExpert journey.
+                  See our toppers share their full KATexpert journey.
                 </p>
               </div>
             </div>

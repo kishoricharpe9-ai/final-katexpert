@@ -61,7 +61,7 @@ import p43 from "@/assets/arnav-raut.jpeg";
 import p44 from "@/assets/deeksha-lanjewar.jpeg";
 
 const BRAND = {
-  name: "KAT Expert",
+  name: "KATexpert",
   tagline: "A Place to Learn, A Place to Grow",
   phone: "+91 9552388015", 
   phoneAlt: "+91 99757 17636",
@@ -96,7 +96,7 @@ const CAT_RESOURCES = [
     id: "cat-2025-slot-3",
     title: "CAT 2025",
     subtitle: "Slot 3 Question Paper",
-    pdfUrl: "https://katexperts.com/wp-content/uploads/2026/06/CAT-2025-Slot-3-Question-Paper-by-KatExpert.pdf.pdf"
+    pdfUrl: "https://katexperts.com/wp-content/uploads/2026/06/CAT-2025-Slot-3-Question-Paper-by-KATexpert.pdf.pdf"
   },
   {
     id: "cat-2025-slot-2",
@@ -335,7 +335,6 @@ const COURSES = [
     duration: "12 Months",
     mode: "Offline",
     features: ["Recorded lectures", "40+ full mocks", "Personal mentorship"],
-    featured: true
   },
   {
     id: "clat",
@@ -366,7 +365,6 @@ const COURSES = [
     duration: "6 Months",
     mode: "Offline",
     features: ["Speed test training", "100+ practice sets", "CAP guidance"],
-    featured: true
   },
   {
     id: "mca-cet",
@@ -439,7 +437,7 @@ const FACULTY = [
     image: faculty2,
     name: "Prof. Krish Vyas",
     designation: "BE | MBA | Master Mentor Specialized in Quantitative Aptitude (QA) & Data Interpretation & Logical Reasoning (DILR)",
-    experience: "5+ years",
+    experience: "6+ years",
     students: "5,000+",
     expertise: ["Quantitative Ability", "DI-LR"],
     blurb: "An engineer and an MBA, Krish combines the analytical laser-like focus and business sense in a unique package for the competitive exam preparation arena. Having spent years of direct teaching and mentoring experience, he has emerged as the go-to guide for thousands of aspirants pursuing dreams through examinations such as CAT, CLAT, and many other entrance exams. Masters in Quants & LRDI.",
@@ -492,11 +490,11 @@ const TOPPERS = [
   { image: p1, name: "Arpit Khadatkar", exam: "MCA CET", score: "95.93%ile", college: "IIM Bangalore", year: 2026 },
   { image: p13, name: "Vansh Katekhaye", exam: "MCA CET", score: "87.93%ile", college: "IIM Indore", year: 2026 },
   { image: p17, name: "Kiran Kumar Rajurkar", exam: "CAT", score: "80.30%ile", college: "SIMSREE Mumbai", year: 2025 },
-  { image: p19, name: "Nikita Agrawal", exam: "DILR", score: "88.71%ile", college: "JBIMS Mumbai", year: 2025 },
-  { image: p18, name: "Chitvan Agrawal", exam: "DILR", score: "93.98%ile", college: "JBIMS Mumbai", year: 2025 },
+  { image: p19, name: "Nikita Agrawal", exam: "CAT", score: "88.71%ile", college: "JBIMS Mumbai", year: 2025 },
+  { image: p18, name: "Chitvan Agrawal", exam: "CAT", score: "93.98%ile", college: "JBIMS Mumbai", year: 2025 },
   { image: p21, name: "Meet Patel", exam: "CAT", score: "87.97%ile", college: "IIM Ahmedabad", year: 2025 },
   { image: p20, name: "Hiten Khatod", exam: "CAT", score: "89.90%ile", college: "IIM Bangalore", year: 2025 },
-  { image: p31, name: "Naman Agrawal", exam: "DILR", score: "98.81%ile", college: "NLSIU Bangalore", year: 2025 },
+  { image: p31, name: "Naman Agrawal", exam: "CAT", score: "98.81%ile", college: "NLSIU Bangalore", year: 2025 },
   { image: p38, name: "Anirudhha Bhuptani", exam: "BBA CET", score: "98.04%ile", college: "NLSIU Bangalore", year: 2026 },
   { image: p39, name: "Arnav Mahatme", exam: "BBA CET", score: "95.62%ile", college: "NLSIU Bangalore", year: 2026 },
   { image: p40, name: "Geetika Mundhada", exam: "BBA CET", score: "95.46%ile", college: "NLSIU Bangalore", year: 2026 },
@@ -513,19 +511,19 @@ const TESTIMONIALS = [
     image: p9,
     name: "Rupali Kale",
     rating: 5,
-    text: "I am incredibly grateful to KatExpert for providing the right mentorship, quality resources, and continuous motivation throughout my MCA CET preparation. Their expert guidance contributed greatly to my success in securing an impressive 97.7 percentile."
+    text: "I am incredibly grateful to KATexpert for providing the right mentorship, quality resources, and continuous motivation throughout my MCA CET preparation. Their expert guidance contributed greatly to my success in securing an impressive 97.7 percentile."
   },
   {
     image: p11,
     name: "Shimant Bijwe",
     rating: 5,
-    text: "The interactive classes at KatExpert genuinely made learning enjoyable and kept me highly engaged throughout. Their proper direction, excellent study resources, and strategic guidance were exactly what I needed to successfully achieve my academic goal."
+    text: "The interactive classes at KATexpert genuinely made learning enjoyable and kept me highly engaged throughout. Their proper direction, excellent study resources, and strategic guidance were exactly what I needed to successfully achieve my academic goal."
   },
   {
     image: p16,
     name: "Janhavi Pawaday",
     rating: 5,
-    text: "I am grateful to the teachers of KatExpert for their support. I joined later than most, but they helped me cover the syllabus. Their structured worksheets helped me improve quickly, scoring 88% with constant support."
+    text: "I am grateful to the teachers of KATexpert for their support. I joined later than most, but they helped me cover the syllabus. Their structured worksheets helped me improve quickly, scoring 88% with constant support."
   },
   {
     image: p32,
@@ -616,8 +614,8 @@ const TESTIMONIALS = [
 
 const FAQS = [
   {
-    question: "What are the benefits of joining KatExpert?",
-    answer: "Joining KatExpert provides expert faculty, a structured curriculum, personalized attention, and high-quality study materials. Students benefit from regular assessments, flexible learning options, and dedicated doubt resolution. Additionally, the competitive environment and career guidance help ensure effective preparation and success in IIM entrance exams."
+    question: "What are the benefits of joining KATexpert?",
+    answer: "Joining KATexpert provides expert faculty, a structured curriculum, personalized attention, and high-quality study materials. Students benefit from regular assessments, flexible learning options, and dedicated doubt resolution. Additionally, the competitive environment and career guidance help ensure effective preparation and success in IIM entrance exams."
   },
   {
     question: "How can I enroll in a course?",

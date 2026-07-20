@@ -4,67 +4,67 @@ import { Download, FileText, Phone, Mail, MapPin, MessageCircle, GraduationCap, 
 
 const GDPI_RESOURCES = [
   {
-    title: "KatExpert GD/PI Prep",
+    title: "KATexpert GD/PI Prep",
     description: "Core preparation notes covering the fundamentals of Group Discussion and Personal Interview rounds.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-prep.docx_compressed-1.pdf",
     category: "Foundation",
   },
   {
-    title: "KatExpert GD/PI Prep — 10/12",
+    title: "KATexpert GD/PI Prep — 10/12",
     description: "Structured preparation guide with topics, frameworks and examples for the 10th December session.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-prep-10_12.docx_compressed-1-1.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KatExpert GD/PI — 11/12",
+    title: "KATexpert GD/PI — 11/12",
     description: "Session material with current-affairs GD topics and interview pointers.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-11_12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KatExpert GD/PI — 13/12",
+    title: "KATexpert GD/PI — 13/12",
     description: "GD prompts, key arguments and PI questions curated for the 13th December class.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-13_12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KatExpert GD/PI — 14/12",
+    title: "KATexpert GD/PI — 14/12",
     description: "Discussion themes and PI practice questions for the 14th December session.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-14_12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KatExpert GD/PI — 19/12",
+    title: "KATexpert GD/PI — 19/12",
     description: "Weekly compilation of GD topics with structured points for and against.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-19-12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KatExpert GD/PI — 27/12",
+    title: "KATexpert GD/PI — 27/12",
     description: "Fresh set of GD topics and interview scenarios for the 27th December class.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-27-12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KatExpert GD/PI — 29/12",
+    title: "KATexpert GD/PI — 29/12",
     description: "Practice pack with GD case topics and personal interview response frameworks.",
     url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-29-12.docx_compressed-1.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KatExpert GD/PI — 31/12",
+    title: "KATexpert GD/PI — 31/12",
     description: "Year-end wrap-up compilation with major GD themes and PI questions.",
     url: "https://katexperts.com/wp-content/uploads/2026/01/KATexpert-GD-PI-31-12.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KatExpert GD/PI — 3/1",
+    title: "KATexpert GD/PI — 3/1",
     description: "New year kick-off session material with current GD topics.",
     url: "https://katexperts.com/wp-content/uploads/2026/01/KATexpert-GD-PI-3-1.docx_compressed.pdf",
     category: "Daily Notes",
   },
   {
-    title: "KatExpert GD/PI — 4/1",
+    title: "KATexpert GD/PI — 4/1",
     description: "Follow-up session pack with additional GD topics and interview prompts.",
     url: "https://katexperts.com/wp-content/uploads/2026/01/KATexpert-GD-PI-4-1.docx_compressed.pdf",
     category: "Daily Notes",
@@ -143,7 +143,7 @@ export default function GdpiPage() {
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Once written exam shortlists are out, the Group Discussion and Personal Interview
-              rounds decide who converts a call into an admit. At KatExpert, our GD/PI programme
+              rounds decide who converts a call into an admit. At KATexpert, our GD/PI programme
               is designed to give you structured practice, current-affairs awareness, and confident
               communication — the three pillars that panels look for.
             </p>
@@ -182,7 +182,7 @@ export default function GdpiPage() {
               GD/PI Study Material
             </h2>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-              Every session PDF, interview question bank and post-CAT guide from the KatExpert
+              Every session PDF, interview question bank and post-CAT guide from the KATexpert
               GD/PI programme — all in one place, ready to download.
             </p>
           </div>
@@ -258,7 +258,7 @@ export default function GdpiPage() {
             {[
               { n: 1, title: "Understand the format", body: "Learn how B-Schools structure their GD, WAT and PI rounds and what each panel evaluates." },
               { n: 2, title: "Practice with the daily PDFs", body: "Use the session notes above to revise arguments, frameworks and interview categories every day." },
-              { n: 3, title: "Join live mock panels", body: "Face rotating panels with KatExpert mentors and get structured, actionable feedback." },
+              { n: 3, title: "Join live mock panels", body: "Face rotating panels with KATexpert mentors and get structured, actionable feedback." },
               { n: 4, title: "Refine your profile story", body: "Nail the ‘tell me about yourself’ answer and align your narrative with each B-School’s culture." },
             ].map((s) => (
               <li

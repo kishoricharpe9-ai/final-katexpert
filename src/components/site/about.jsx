@@ -26,7 +26,7 @@ function About() {
         <Reveal className="order-2 lg:order-1">
           <SectionHeading
             align="left"
-            eyebrow="About KatExpert"
+            eyebrow="About KATexpert"
             title={
               <>
                 A place to learn, <span className="text-gradient-accent">a place to grow</span>
@@ -36,7 +36,7 @@ function About() {
           
           
           <p className="mt-3.5 text-sm leading-relaxed text-muted-foreground">
-            For over a decade, faculties of KatExpert has guided thousands of students from Nagpur and across India into the country's most prestigious institutes. We combine concept-first teaching, relentless mentorship and data-driven mock analysis to build exam-day champions.
+            For over a decade, faculties of KATexpert has guided thousands of students from Nagpur and across India into the country's most prestigious institutes. We combine concept-first teaching, relentless mentorship and data-driven mock analysis to build exam-day champions.
           </p>
           
         
@@ -80,7 +80,7 @@ function About() {
             
             <img
               src={aboutImg}
-              alt="KatExpert students celebrating their success"
+              alt="KATexpert students celebrating their success"
               width={1200}
               height={1000}
               loading="lazy"

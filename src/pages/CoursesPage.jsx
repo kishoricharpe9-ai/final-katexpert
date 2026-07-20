@@ -102,7 +102,7 @@ export default function CoursesPage() {
           <AnimatePresence mode="popLayout">
             {filteredCourses.map((course) => {
               const IconComponent = getCourseIcon(course.slug);
-              const isFeatured = course.slug === "cat" || course.slug === "mba-cet";
+              const isFeatured = false;
               
               // Extract duration & mode dynamically
               const durationMap = {
