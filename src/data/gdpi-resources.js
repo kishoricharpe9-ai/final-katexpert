@@ -1,0 +1,86 @@
+export const GDPI_RESOURCES = [
+  {
+    title: "KATexpert GD/PI Prep",
+    description: "Core preparation notes covering the fundamentals of Group Discussion and Personal Interview rounds.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-prep.docx_compressed-1.pdf",
+    category: "Foundation",
+  },
+  {
+    title: "KATexpert GD/PI Prep — 10/12",
+    description: "Structured preparation guide with topics, frameworks and examples for the 10th December session.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-prep-10_12.docx_compressed-1-1.pdf",
+    category: "Daily Notes",
+  },
+  {
+    title: "KATexpert GD/PI — 11/12",
+    description: "Session material with current-affairs GD topics and interview pointers.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-11_12.docx_compressed.pdf",
+    category: "Daily Notes",
+  },
+  {
+    title: "KATexpert GD/PI — 13/12",
+    description: "GD prompts, key arguments and PI questions curated for the 13th December class.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-13_12.docx_compressed.pdf",
+    category: "Daily Notes",
+  },
+  {
+    title: "KATexpert GD/PI — 14/12",
+    description: "Discussion themes and PI practice questions for the 14th December session.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-14_12.docx_compressed.pdf",
+    category: "Daily Notes",
+  },
+  {
+    title: "KATexpert GD/PI — 19/12",
+    description: "Weekly compilation of GD topics with structured points for and against.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-19-12.docx_compressed.pdf",
+    category: "Daily Notes",
+  },
+  {
+    title: "KATexpert GD/PI — 27/12",
+    description: "Fresh set of GD topics and interview scenarios for the 27th December class.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-27-12.docx_compressed.pdf",
+    category: "Daily Notes",
+  },
+  {
+    title: "KATexpert GD/PI — 29/12",
+    description: "Practice pack with GD case topics and personal interview response frameworks.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/KATexpert-GD-PI-29-12.docx_compressed-1.pdf",
+    category: "Daily Notes",
+  },
+  {
+    title: "KATexpert GD/PI — 31/12",
+    description: "Year-end wrap-up compilation with major GD themes and PI questions.",
+    url: "https://katexperts.com/wp-content/uploads/2026/01/KATexpert-GD-PI-31-12.docx_compressed.pdf",
+    category: "Daily Notes",
+  },
+  {
+    title: "KATexpert GD/PI — 3/1",
+    description: "New year kick-off session material with current GD topics.",
+    url: "https://katexperts.com/wp-content/uploads/2026/01/KATexpert-GD-PI-3-1.docx_compressed.pdf",
+    category: "Daily Notes",
+  },
+  {
+    title: "KATexpert GD/PI — 4/1",
+    description: "Follow-up session pack with additional GD topics and interview prompts.",
+    url: "https://katexperts.com/wp-content/uploads/2026/01/KATexpert-GD-PI-4-1.docx_compressed.pdf",
+    category: "Daily Notes",
+  },
+  {
+    title: "Common MBA Interview Question Categories",
+    description: "A structured breakdown of the most commonly asked MBA personal interview question categories.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/Common-MBA-Interview-Question-Categories.docx_compressed.pdf",
+    category: "Interview Guide",
+  },
+  {
+    title: "What to do after CAT '25",
+    description: "Step-by-step guidance on next moves after the CAT exam — form filling, shortlists, and preparation.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/What-to-do-after-CAT-25_-1.pdf-1_compressed.pdf",
+    category: "Post-CAT",
+  },
+  {
+    title: "Top Certification Courses for an MBA Aspirant",
+    description: "Curated list of high-value certifications that strengthen your MBA profile and shortlist chances.",
+    url: "https://katexperts.com/wp-content/uploads/2025/12/Top-Certification-Courses-for-an-MBA-aspirant.docx_compressed.pdf",
+    category: "Profile Building",
+  },
+];
