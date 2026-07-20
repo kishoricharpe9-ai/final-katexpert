@@ -59,7 +59,6 @@ const cat = {
   overview: [
     { label: "Duration", value: "10 – 18 Months" },
     { label: "Learning Mode", value: "Offline Classroom" },
-    { label: "Batch Starts", value: "August 2027" },
     { label: "Mock Tests", value: "Topic wise and sectional mocks" },
     { label: "Mentorship", value: "1-on-1 Personal" },
     { label: "Material", value: "Printed + Online" },
@@ -433,8 +432,8 @@ const mbaCet = {
   code: "MBA CET",
   name: "Maharashtra MBA Common Entrance Test",
   tagline: "All-inclusive MBA CET preparation targeting JBIMS, SIMSREE, PUMBA, Welingkar and Maharashtra's top B-schools.",
-  heroImage: p1,
-  logo: p1,
+  heroImage: mbaCetHero,
+  logo: mbaCetHero,
   description:
     "Prepare for Maharashtra's top B-schools with our all-inclusive MBA CET Test Series designed for serious aspirants targeting JBIMS, SIMSREE, PUMBA, Welingkar and other leading institutes.",
   highlights: [

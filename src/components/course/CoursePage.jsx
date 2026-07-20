@@ -131,7 +131,26 @@ function Hero({ c }) {
   );
 }
 
+const getBatchCards = (course) => {
+  if (course.slug === "ipmat") {
+    return [
+      { heading: "IPMAT 27 batch Start", subheading: "August 2026" },
+      { heading: "IPMAT 28 batch start", subheading: "August 2026" },
+    ];
+  }
+  if (course.slug === "clat") {
+    return [
+      { heading: "CLAT 2027 batch starts", subheading: "August 2026" },
+      { heading: "CLAT 2028 batch start", subheading: "August 2026" },
+    ];
+  }
+  return [
+    { heading: `${course.code} 2027 batch starts`, subheading: "August 2026" },
+  ];
+};
+
 function QuickOverview({ c }) {
+  const batchCards = getBatchCards(c);
   return (
     <section className="py-10 sm:py-12 bg-cream-mesh">
       <div className="container-x max-w-5xl mx-auto px-4 sm:px-8">
@@ -145,6 +164,16 @@ function QuickOverview({ c }) {
             >
               <p className="text-[10px] font-semibold uppercase tracking-widest text-[#ea580c]">{o.label}</p>
               <p className="mt-1.5 text-lg font-display font-bold text-navy">{o.value}</p>
+            </div>
+          ))}
+          {batchCards.map((b, i) => (
+            <div
+              key={b.heading}
+              className="card-premium p-4.5 reveal"
+              style={{ animationDelay: `${(c.overview.length + i) * 60}ms` }}
+            >
+              <p className="text-[10px] font-semibold uppercase tracking-widest text-[#ea580c]">{b.heading}</p>
+              <p className="mt-1.5 text-lg font-display font-bold text-navy">{b.subheading}</p>
             </div>
           ))}
         </div>
