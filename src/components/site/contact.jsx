@@ -33,7 +33,16 @@ export function Contact() {
     await new Promise((r) => setTimeout(r, 800));
     setSubmitting(false);
     setDone(true);
-    toast.success("Thank you! Our counsellor will call you within 24 hours.");
+    toast.success("Thank you! Redirecting you to WhatsApp...");
+    
+    const whatsappNum = BRAND.whatsapp || "919552388015";
+    const text = `Hi KATexpert, I'd like to book a free counselling session. Here are my details:
+- Name: ${data.name}
+- Email: ${data.email}
+- Phone: ${data.phone}
+- Selected Course: ${data.course}`;
+    
+    window.open(`https://wa.me/${whatsappNum}?text=${encodeURIComponent(text)}`, "_blank");
     form.reset();
   };
 

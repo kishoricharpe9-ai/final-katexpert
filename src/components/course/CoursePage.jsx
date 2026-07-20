@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { BRAND } from "@/lib/site-data";
 
 /* ------------------------------------------------------------------ */
 /* Small local helpers                                                 */
@@ -447,15 +448,27 @@ function CTA({ c }) {
               </div>
             </div>
             <form
-              onSubmit={(e) => { e.preventDefault(); alert("Thank you — our team will get in touch."); }}
+              onSubmit={(e) => {
+                e.preventDefault();
+                const form = e.currentTarget;
+                const data = Object.fromEntries(new FormData(form).entries());
+                const whatsappNum = BRAND.whatsapp || "919552388015";
+                const text = `Hi KATexpert, I'd like to enquire about the ${c.code} course. Here are my details:
+- Name: ${data.name}
+- Phone: ${data.phone}
+- Email: ${data.email}
+- City: ${data.city || 'N/A'}`;
+                window.open(`https://wa.me/${whatsappNum}?text=${encodeURIComponent(text)}`, "_blank");
+                form.reset();
+              }}
               className="rounded-xl bg-white text-navy p-5 shadow-soft"
             >
               <h3 className="font-display text-sm font-bold">Enquire about {c.code}</h3>
               <div className="mt-3 grid gap-2.5">
-                <input required placeholder="Full Name" className="rounded-lg border border-border px-3.5 py-2.5 text-xs outline-none focus:border-[#ea580c]" />
-                <input required placeholder="Phone" className="rounded-lg border border-border px-3.5 py-2.5 text-xs outline-none focus:border-[#ea580c]" />
-                <input type="email" required placeholder="Email" className="rounded-lg border border-border px-3.5 py-2.5 text-xs outline-none focus:border-[#ea580c]" />
-                <input placeholder="City" className="rounded-lg border border-border px-3.5 py-2.5 text-xs outline-none focus:border-[#ea580c]" />
+                <input required name="name" placeholder="Full Name" className="rounded-lg border border-border px-3.5 py-2.5 text-xs outline-none focus:border-[#ea580c]" />
+                <input required name="phone" placeholder="Phone" className="rounded-lg border border-border px-3.5 py-2.5 text-xs outline-none focus:border-[#ea580c]" />
+                <input type="email" required name="email" placeholder="Email" className="rounded-lg border border-border px-3.5 py-2.5 text-xs outline-none focus:border-[#ea580c]" />
+                <input name="city" placeholder="City" className="rounded-lg border border-border px-3.5 py-2.5 text-xs outline-none focus:border-[#ea580c]" />
                 <button type="submit" className="inline-flex items-center justify-center gap-1.5 text-white px-5 py-2.5 text-xs font-bold uppercase tracking-wider rounded-full bg-accent hover:bg-accent/90 shadow transition-all mt-1 w-full cursor-pointer">Submit Enquiry</button>
               </div>
             </form>
